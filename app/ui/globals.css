@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+/*various base font sizes for differnt purposes - use this styles instead of the default*/
+.display-large{
+  font-size: 64px;
+  line-height: 72px;
+}
+.display-medium{
+  font-size: 52px;
+  line-height: 58px;
+}
+.display-small{
+  font-size: 44px;
+  line-height: 50px;
+}
+.headline-large{
+  font-size: 40px;
+  line-height: 44px;
+}
+.headline-medium{
+  font-size: 36px;
+  line-height: 40px;
+}
+.headline-small{
+  font-size: 32px;
+  line-height: 36px;
+}
+.title-large{
+  font-size: 22px;
+  line-height: 24px;
+}
+.title-medium{
+  font-size: 16px;
+  line-height: 18px;
+}
+.title-small{
+  font-size: 14px;
+  line-height: 16px;
+}
+.body-large, .label-large{
+  font-size: 16px;
+  line-height: 24px;
+}
+.body-medium, .label-medium{
+  font-size: 14px;
+  line-height: 20px;
+}
+.body-small, .label-small{
+  font-size: 12px;
+  line-height: 18px;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
