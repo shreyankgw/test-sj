@@ -13,6 +13,19 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      animation: {
+        "background-shine": "background-shine 3s linear infinite"
+      },
+      keyframes: {
+        "background-shine": {
+          "from": {
+            "backgroundPosition": "0 0"
+          },
+          "to": {
+            "backgroundPosition": "-200% 0"
+          }
+        }
+      },
       colors: {
         brandPrimary: "#5C17E5",
         brandSecondary: "#7F77FF",
