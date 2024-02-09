@@ -35,7 +35,7 @@ export default function Hero() {
               Learn More
             </Link>
           </div>
-          <div className="text-left grid lg:grid-cols-3 p-6 rounded-2xl bg-gradient-to-tr from-gray-50 to-gray-200 border border-gray-100 max-w-2xl lg:max-w-5xl mx-auto lg:divide-x divide-y lg:divide-y-0 divide-gray-300">
+          <div className="text-left grid lg:grid-cols-3 p-6 rounded-2xl bg-gradient-to-tr from-gray-50 to-gray-100 border border-gray-100 max-w-2xl lg:max-w-5xl mx-auto lg:divide-x divide-y lg:divide-y-0 divide-gray-300">
             <div className="flex items-start gap-6 lg:pr-6 pb-6 lg:pb-0">
               <div className="w-10">
                 <span className="p-3 rounded-xl bg-gray-200 dark:bg-gray-800 flex w-max text-gray-800 dark:text-gray-200">
@@ -56,7 +56,7 @@ export default function Hero() {
                 </span>
               </div>
               <div className="flex-1 space-y-1">
-                <h2 className="text-gray-900 dark:text-white font-semibold text-lg">
+                <h2 className="text-textPrimary dark:text-white font-semibold text-lg">
                   Excellence
                 </h2>
                 <p className="text-gray-700 dark:text-gray-300 text-sm">
@@ -84,7 +84,7 @@ export default function Hero() {
                 </span>
               </div>
               <div className="flex-1 space-y-1">
-                <h2 className="text-gray-900 dark:text-white font-semibold text-lg">
+                <h2 className="text-textPrimary dark:text-white font-semibold text-lg">
                   Collaboration
                 </h2>
                 <p className="text-gray-700 dark:text-gray-300 text-sm">

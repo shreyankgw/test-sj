@@ -32,7 +32,7 @@ const config: Config = {
         brandTertiary: "#B3BEFF",
         bgPrimary: "#ffffff",
         bgSecondary: "#F6F8FB",
-        bgOverlay: "#CBD4E166",
+        bgOverlay: "#CBD4E1",
         bgPrimaryInverse: "#1A212B",
         bgSecondaryInverse: "#27313F",
         bgInformative: "#E0EDFF",

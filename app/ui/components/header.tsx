@@ -19,10 +19,8 @@ export default function Header(){
             setIsSticky(false);
         }else{
             setIsSticky(true);
-        }
-       
+        }    
         setScrollY(window.scrollY);
-        console.log(scrollY, isSticky);
     }
 
     useEffect(()=> {
