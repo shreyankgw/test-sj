@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import {  lexend } from "@/app/ui/fonts";
-import "@/app/ui/globals.css";
-import  Header  from "@/app/ui/components/header";
-import  Footer  from "@/app/ui/components/footer";
-import Banner from "@/app/ui/components/banner";
+import {  lexend } from "@/app/(app)/ui/fonts";
+import "@/app/(app)/ui/globals.css";
+import  Header  from "@/app/(app)/ui/components/header";
+import  Footer  from "@/app/(app)/ui/components/footer";
+import Banner from "@/app/(app)/ui/components/banner";
 
 export const metadata: Metadata = {
   title: "Shopify Expert Developers | The SJ Development",

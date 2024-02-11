@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { PrimaryButtonProps } from "@/app/lib/definitions";
+import { PrimaryButtonProps } from "@/app/(app)/lib/definitions";
 
 export default function ButtonPrimary({title, url}: PrimaryButtonProps) {
     return (
