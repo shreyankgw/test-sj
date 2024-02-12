@@ -12,4 +12,13 @@ export type Post = {
         current: string;
     };
     body?: PortableTextBlock[];
+    categoryNames?: string[];
 }
+
+export interface RealTimePostProps {
+    postId: string;
+  }
+
+export interface FeaturedCategoryProps{
+    posts: Post[]
+  }
