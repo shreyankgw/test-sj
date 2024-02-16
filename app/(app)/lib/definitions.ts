@@ -6,13 +6,16 @@ export type PrimaryButtonProps = {
 };
 
 export type Post = {
-    _id: string;
+    _id?: string;
     title?: string;
     slug?: {
         current: string;
     };
     body?: PortableTextBlock[];
     categoryNames?: string[];
+    mainImage?: string;
+    _updatedAt?: string;
+    _createdAt?: string;
 }
 
 export interface RealTimePostProps {
