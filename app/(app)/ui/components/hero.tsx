@@ -1,15 +1,13 @@
 "use client";
 import Link from "next/link";
-import Image from "next/image";
-import ButtonPrimary from "./ButtonPrimary";
 
 export default function Hero() {
   return (
-    <section className="min-h-max bg-white">
+    <section className="min-h-max">
       <div className="absolute top-1/3 left-1/2 -translate-y-1/2 -translate-x-1/2 w-2/5 aspect-[2/0.5] bg-gradient-to-br from-brandSecondary to-brandTertiary rounded-full opacity-25 blur-2xl"></div>
       <div className="relative mx-auto pt-32 pb-24 lg:max-w-7xl xl:max-w-screen-2xl w-full px-5 sm:px-10 md:px-12 lg:px-5 text-center space-y-4">
         <span className="inline-flex h-full animate-background-shine cursor-pointer items-center justify-center rounded-full border border-gray-800 bg-[linear-gradient(110deg,#000,45%,#4D4B4B,55%,#000)] bg-[length:250%_100%] px-3 py-1 text-xs font-medium text-bgPrimary">
-          Get In Touch
+          We Build Slick Shopify Stores 🔥
         </span>
         <div className="space-y-10">
           <h1 className="text-textPrimary dark:text-white mx-auto max-w-5xl xl:max-w-7xl font-bold text-4xl/tight sm:text-5xl/tight lg:text-6xl/tight xl:text-7xl/tight">

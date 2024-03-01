@@ -4,17 +4,16 @@ import Link from "next/link";
 import Image from "next/image";
 import ButtonPrimary from "../ButtonPrimary";
 
+
 // sticky megamenu and navigation menu with hamburger
 export default function Header() {
   const [openNavbar, setOpenNavbar] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
   const [scrollY, setScrollY] = useState(0);
-  const [megaMenuOpen, setMegaMenuOpen] = useState(false); // New state for mega menu visibility
 
   const toggleNavbar = () => {
     setOpenNavbar(!openNavbar);
   };
-  const toggleMegaMenu = () => setMegaMenuOpen(!megaMenuOpen);
 
   const handleScroll = () => {
     if (window.scrollY > scrollY || window.scrollY < 100) {
@@ -32,7 +31,7 @@ export default function Header() {
     };
   }, [scrollY]);
 
-  return (
+  return ( 
     <header
       className={`${
         isSticky ? "fixed top-0 inset-0" : "relative"
@@ -69,22 +68,13 @@ export default function Header() {
           `}
           >
             <ul className="flex flex-col gap-y-5 text-textPrimary text-lg lg:items-center lg:flex-row lg:gap-x-11 lg:h-full lg:justify-center lg:flex-1">
-            <li className="relative">
-            <button
-                  onClick={toggleMegaMenu}
-                  className="transition ease-linear hover:text-gray-900 dark:hover:text-white"
-                >
-                 Services
-            </button>
-             {megaMenuOpen && (
-              <div className="absolute left-0 lg:left-1/2 transform lg:-translate-x-1/2 w-screen bg-white shadow-lg mt-1">
-                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 p-4 max-w-7xl lg:max-w-screen-2xl mx-auto">
-                    <div>Column 1</div>
-                    <div>Column 2</div>
-                    <div>Column 3</div>
-                 </div>
-              </div>
-             )}
+            <li>
+              <Link
+                href="#"
+                className="transition ease-linear hover:text-gray-900 dark:hover:text-white"
+              >
+                Services
+              </Link>
             </li>
               <li>
                 <Link
@@ -108,14 +98,6 @@ export default function Header() {
                   className="transition ease-linear hover:text-gray-900 dark:hover:text-white"
                 >
                   Blogs
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="transition ease-linear hover:text-gray-900 dark:hover:text-white"
-                >
-                  Help
                 </Link>
               </li>
               <li>
@@ -165,3 +147,4 @@ export default function Header() {
     </header>
   );
 }
+

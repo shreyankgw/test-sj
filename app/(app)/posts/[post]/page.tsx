@@ -5,6 +5,11 @@ import type { Post } from "@/app/(app)/lib/definitions";
 import { notFound } from "next/navigation";
 import { Slide } from "../../ui/animation/Slide";
 import { formatDate } from "../../utils/date";
+import { readTime } from "../../utils/readTime";
+import { PortableText,toPlainText } from "@portabletext/react";
+import PageHeading from "../../ui/components/common/PageHeading";
+import urlBuilder from "@sanity/image-url";
+import { CustomPortableText } from "../../ui/components/common/CustomPortableText";
 
 type Props = {
   params: {
@@ -22,6 +27,10 @@ async function fetchPost(slug: string): Promise<Post> {
 export default async function Article({ params }: Props) {
   const slug = params.post;
   const post: Post = await fetchPost(slug);
+
+  const words = toPlainText(post.body!);
+
+  const mainImage = post.mainImage && urlBuilder(client).image(post.mainImage).url();
 
   if (!post) {
     notFound();
@@ -71,12 +80,48 @@ export default async function Article({ params }: Props) {
                   <path d="M19 4h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm.002 16H5V8h14l.002 12z"></path>
                   <path d="m11 17.414 5.707-5.707-1.414-1.414L11 14.586l-2.293-2.293-1.414 1.414z"></path>
                 </svg>
-                <time dateTime={post._updatedAt ? post._updatedAt : post._createdAt} className="text-textSecondary">
+                <time
+                  dateTime={post._updatedAt ? post._updatedAt : post._createdAt}
+                  className="text-textSecondary"
+                >
                   {post._updatedAt
                     ? formatDate(post._updatedAt)
                     : formatDate(post._createdAt!)}
                 </time>
               </div>
+              <div className="flex items-center gap-x-2 text-md text-textSecondary">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill={"#728197"}
+                  className="text-textSecondary"
+                >
+                  <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path>
+                  <path d="M13 7h-2v5.414l3.293 3.293 1.414-1.414L13 11.586z"></path>
+                </svg>
+                <div>{readTime(words)}</div>
+              </div>
+            </div>
+
+            <PageHeading title={post.title!} />
+
+            <div className="relative w-full h-40 pt-[52.5%]">
+               <Image 
+                   className="rounded-xl border border-zinc-800 object-cover"
+                   layout="fill"
+                   src={mainImage && mainImage || ''}
+                   alt={post.title && post.title || ''}
+                   quality={100}
+                   priority
+                   placeholder="blur"
+                   blurDataURL={`/_next/image?url=${mainImage}&w=16&q=1`}
+                />
+            </div>
+
+            <div className="mt-8 text-zinc-600 leading-relaxed tracking-tight text-lg">
+              <PortableText value={post.body!} components={CustomPortableText} />
             </div>
           </div>
         </Slide>
