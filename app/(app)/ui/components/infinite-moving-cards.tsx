@@ -4,18 +4,35 @@ import { cn } from "@/app/(app)/utils/cn";
 import React, { useEffect, useState } from "react";
 import PageHeading from "./common/PageHeading";
 
+const cardItems = [
+  {
+    quote: "We have worked with them in the past and we are continuing as they are doing the Fabulous Job that makes us satisfied. They are time managing, understands the priorities and replies very quickly to your question. I will recommend them on any of your website projects.",
+    name: "Mark Calvert",
+    title: "Owner at supportiveLiving.ca",
+  },
+  {
+    quote: "They did a very good job on our Shopify Store to make it look more lively and that helped us bring good sale and our conversion went way above then the before. Also, need to mention, their work on site speed was flawless as they eliminated the bugs that was crashing our site.",
+    name: "Karmen Salim",
+    title: "Manager at Village Juicery",
+  },
+  {
+    quote: "They are quick and reliable as they work on their timelines and deliver the best of your project. We feel like we have our own the employees working with us on the project. They gave good ideas and their research is also excellent.",
+    name: "Daniel Eidan",
+    title: "Manager at GTA Vapes",
+  },
+  {
+    quote: "We have worked with them in the past and we are continuing as they are doing the Fabulous Job that makes us satisfied. They are time managing, understands the priorities and replies very quickly to your question. I will recommend them on any of your website projects.",
+    name: "Another Review",
+    title: "Owner at supportiveLiving.ca",
+  },
+]
+
 export const InfiniteMovingCards = ({
-  items,
   direction = "left",
   speed = "fast",
   pauseOnHover = true,
   className,
 }: {
-  items: {
-    quote: string;
-    name: string;
-    title: string;
-  }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
   pauseOnHover?: boolean;
@@ -72,10 +89,14 @@ export const InfiniteMovingCards = ({
   };
   return (
     <>
-    <PageHeading
-      title="Don't Just Take Our Word For It"
-      description="Read about what our clients have to say about us"
-    />
+    <div>
+        <h2 className="text-2xl lg:text-4xl font-bold text-center my-8">
+           Some of Our Client Reviews
+        </h2>
+        <p className="text-textSecondary mx-auto max-w-2xl lg:max-w-3xl text-center text-lg">
+          Take a glance at some of our top client's testimonials and learn more to read our project case studies for these projects to see how we work.
+        </p>
+    </div>
     <div
       ref={containerRef}
       className={cn(
@@ -91,12 +112,12 @@ export const InfiniteMovingCards = ({
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
-        {items.map((item, idx) => (
+        {cardItems.map((item, idx) => (
           <li
             className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-borderPrimary px-8 py-6 md:w-[450px]"
             style={{
               background:
-                "linear-gradient(180deg, var(--bgInformative), var(--bgSecondary))",
+                "linear-gradient(180deg, rgba(246,248,251,0.6) 0%, rgba(203,212,225,0.6) 100%)"
             }}
             key={item.name}
           >

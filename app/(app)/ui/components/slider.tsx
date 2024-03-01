@@ -17,7 +17,7 @@ export default function Slider() {
       autoplay={true}
       direction="down"
       images={sliderImages}
-      className="h-[40rem]"
+      className="lg:h-screen h-[40rem] w-full"
     >
       <motion.div
         initial={{
@@ -34,7 +34,7 @@ export default function Slider() {
         className="z-50 flex flex-col justify-center items-center"
       >
         <motion.p className="font-bold text-xl md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
-          The hero section slideshow <br /> nobody asked for
+        Shopify Mastery Fueled By <br/> Passion.
         </motion.p>
         <button className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">
           <span>Join now →</span>
