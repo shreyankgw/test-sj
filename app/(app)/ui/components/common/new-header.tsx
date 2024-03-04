@@ -8,43 +8,44 @@ import ButtonPrimary from "../ButtonPrimary";
 const products = [
   {
     name: "Shopify Theme Development",
-    description: "Get Link better understanding of your traffic",
-    href: "#",
+    description: "Build Themes that will convert",
+    href: "/pages/shopify-theme-development",
+    icon: "/images/icons/shopify_theme.svg",
   },
   {
     name: "Shopify Store Setup",
-    description: "Speak directly to your customers",
-    href: "#",
-  },
-  {
-    name: "Shopify Performance Optimization",
-    description: "Your customers’ data will be safe and secure",
-    href: "#",
+    description: "A to Z Setups Including Integrations with third-party tools",
+    href: "/pages/shopify-store-setup",
+    icon: '/images/icons/shopify_store.svg'
   },
   {
     name: "Shopify Checkout Customization",
-    description: "Connect with third-party tools",
-    href: "#",
+    description: "Unlock new checkout features with checkout extensibility",
+    href: "/pages/shopify-checkout-customization",
+    icon: '/images/icons/shopify_checkout.svg'
   },
   {
     name: "Headless Shopify Development",
-    description: "Build strategic funnels that will convert",
-    href: "#",
+    description: "Blazing Fast Storefront with Fastest Technology",
+    href: "/pages/headless-shopify-development",
+    icon: '/images/icons/shopify_headless.svg'
   },
   {
     name: "Custom Shopify Apps",
-    description: "Build strategic funnels that will convert",
-    href: "#",
+    description: "Tailored Apps specific to your needs",
+    href: "/pages/custom-shopify-apps",
+    icon: '/images/icons/shopify_custom.svg'
   },
   {
-    name: "Accessibility",
-    description: "Build strategic funnels that will convert",
-    href: "#",
+    name: "Performance Optimization / Accessibility",
+    description: "Rank Higher with Performance, SEO and Accessibility",
+    href: "/pages/performance-optimization",
+    icon: '/images/icons/shopify_performance.svg'
   },
 ];
 const callsToAction = [
-  { name: "Our Process", href: "#" },
-  { name: "Get Free Consultation", href: "#" },
+  { name: "Our Process", href: "/pages/our-process" },
+  { name: "Get Free Consultation", href: "/pages/contact" },
 ];
 
 function classNames(...classes: string[]) {
@@ -145,14 +146,23 @@ export default function NewHeader() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg">
                 <div className="p-4">
                   {products.map((item) => (
                     <div
                       key={item.name}
                       className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                     >
-                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"></div>
+                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                       <Image
+                          src={item.icon ? item.icon : ""}
+                          className="h-6 w-6"
+                          alt={item.name}
+                          width={64}
+                          height={64}
+                        />
+                        <span className="sr-only">{item.name}</span>
+                      </div>
                       <div className="flex-auto">
                         <Link
                           href={item.href}
@@ -182,20 +192,20 @@ export default function NewHeader() {
           </Popover>
 
           <Link href="#" className="text-lg leading-6 text-textPrimary">
-           Work
+            Work
           </Link>
           <Link href="#" className="text-lg leading-6 text-textPrimary">
             About
           </Link>
           <Link href="#" className="text-lg leading-6 text-textPrimary">
-           Blogs
+            Blogs
           </Link>
           <Link href="#" className="text-lg leading-6 text-textPrimary">
-           Contact
+            Contact
           </Link>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <ButtonPrimary title="Get Started" url="/" />
+          <ButtonPrimary title="Get Started" url="/" />
         </div>
       </nav>
       <Dialog
@@ -207,22 +217,22 @@ export default function NewHeader() {
         <div className="fixed inset-0 z-[60]" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-[60] w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-          <Link
-            href="/"
-            className="flex items-center gap-x-2 text-3xl font-semibold text-gray-700 dark:text-gray-300"
-          >
-            <div className="flex items-center -space-x-1 font-bold">
-              <span className="sr-only">The SJ Development Logo</span>
-              <Image
-                src={"/logo.png"}
-                alt="logo"
-                width={256}
-                height={256}
-                className="h-10 w-full"
-              />
-            </div>
-            EssDeeJay
-          </Link>
+            <Link
+              href="/"
+              className="flex items-center gap-x-2 text-3xl font-semibold text-gray-700 dark:text-gray-300"
+            >
+              <div className="flex items-center -space-x-1 font-bold">
+                <span className="sr-only">The SJ Development Logo</span>
+                <Image
+                  src={"/logo.png"}
+                  alt="logo"
+                  width={256}
+                  height={256}
+                  className="h-10 w-full"
+                />
+              </div>
+              EssDeeJay
+            </Link>
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -230,8 +240,8 @@ export default function NewHeader() {
             >
               <span className="sr-only">Close menu</span>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M19.2806 18.2194C19.3503 18.2891 19.4056 18.3718 19.4433 18.4628C19.481 18.5539 19.5004 18.6515 19.5004 18.75C19.5004 18.8486 19.481 18.9461 19.4433 19.0372C19.4056 19.1282 19.3503 19.2109 19.2806 19.2806C19.2109 19.3503 19.1282 19.4056 19.0372 19.4433C18.9461 19.481 18.8485 19.5004 18.75 19.5004C18.6514 19.5004 18.5539 19.481 18.4628 19.4433C18.3718 19.4056 18.289 19.3503 18.2194 19.2806L12 13.0603L5.78061 19.2806C5.63988 19.4214 5.44901 19.5004 5.24999 19.5004C5.05097 19.5004 4.8601 19.4214 4.71936 19.2806C4.57863 19.1399 4.49957 18.949 4.49957 18.75C4.49957 18.551 4.57863 18.3601 4.71936 18.2194L10.9397 12L4.71936 5.78063C4.57863 5.6399 4.49957 5.44903 4.49957 5.25C4.49957 5.05098 4.57863 4.86011 4.71936 4.71938C4.8601 4.57865 5.05097 4.49959 5.24999 4.49959C5.44901 4.49959 5.63988 4.57865 5.78061 4.71938L12 10.9397L18.2194 4.71938C18.3601 4.57865 18.551 4.49959 18.75 4.49959C18.949 4.49959 19.1399 4.57865 19.2806 4.71938C19.4213 4.86011 19.5004 5.05098 19.5004 5.25C19.5004 5.44903 19.4213 5.6399 19.2806 5.78063L13.0603 12L19.2806 18.2194Z" fill="#1A212B"/>
-</svg>
+                <path d="M19.2806 18.2194C19.3503 18.2891 19.4056 18.3718 19.4433 18.4628C19.481 18.5539 19.5004 18.6515 19.5004 18.75C19.5004 18.8486 19.481 18.9461 19.4433 19.0372C19.4056 19.1282 19.3503 19.2109 19.2806 19.2806C19.2109 19.3503 19.1282 19.4056 19.0372 19.4433C18.9461 19.481 18.8485 19.5004 18.75 19.5004C18.6514 19.5004 18.5539 19.481 18.4628 19.4433C18.3718 19.4056 18.289 19.3503 18.2194 19.2806L12 13.0603L5.78061 19.2806C5.63988 19.4214 5.44901 19.5004 5.24999 19.5004C5.05097 19.5004 4.8601 19.4214 4.71936 19.2806C4.57863 19.1399 4.49957 18.949 4.49957 18.75C4.49957 18.551 4.57863 18.3601 4.71936 18.2194L10.9397 12L4.71936 5.78063C4.57863 5.6399 4.49957 5.44903 4.49957 5.25C4.49957 5.05098 4.57863 4.86011 4.71936 4.71938C4.8601 4.57865 5.05097 4.49959 5.24999 4.49959C5.44901 4.49959 5.63988 4.57865 5.78061 4.71938L12 10.9397L18.2194 4.71938C18.3601 4.57865 18.551 4.49959 18.75 4.49959C18.949 4.49959 19.1399 4.57865 19.2806 4.71938C19.4213 4.86011 19.5004 5.05098 19.5004 5.25C19.5004 5.44903 19.4213 5.6399 19.2806 5.78063L13.0603 12L19.2806 18.2194Z" fill="#1A212B" />
+              </svg>
 
             </button>
           </div>
@@ -244,18 +254,18 @@ export default function NewHeader() {
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base leading-7 text-textprimary hover:bg-gray-50">
                         Services
                         <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                className="w-4 h-4"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M20.0306 9.53062L12.5306 17.0306C12.461 17.1004 12.3782 17.1557 12.2872 17.1934C12.1961 17.2312 12.0986 17.2506 12 17.2506C11.9014 17.2506 11.8038 17.2312 11.7128 17.1934C11.6217 17.1557 11.539 17.1004 11.4694 17.0306L3.96936 9.53062C3.82863 9.38989 3.74957 9.19902 3.74957 9C3.74957 8.80097 3.82863 8.6101 3.96936 8.46937C4.1101 8.32864 4.30097 8.24958 4.49999 8.24958C4.69901 8.24958 4.88988 8.32864 5.03061 8.46937L12 15.4397L18.9694 8.46937C19.039 8.39969 19.1218 8.34441 19.2128 8.3067C19.3039 8.26899 19.4014 8.24958 19.5 8.24958C19.5985 8.24958 19.6961 8.26899 19.7872 8.3067C19.8782 8.34441 19.9609 8.39969 20.0306 8.46937C20.1003 8.53905 20.1556 8.62178 20.1933 8.71283C20.231 8.80387 20.2504 8.90145 20.2504 9C20.2504 9.09854 20.231 9.19612 20.1933 9.28717C20.1556 9.37821 20.1003 9.46094 20.0306 9.53062Z"
-                  fill="#1A212B"
-                />
-              </svg>
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          className="w-4 h-4"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M20.0306 9.53062L12.5306 17.0306C12.461 17.1004 12.3782 17.1557 12.2872 17.1934C12.1961 17.2312 12.0986 17.2506 12 17.2506C11.9014 17.2506 11.8038 17.2312 11.7128 17.1934C11.6217 17.1557 11.539 17.1004 11.4694 17.0306L3.96936 9.53062C3.82863 9.38989 3.74957 9.19902 3.74957 9C3.74957 8.80097 3.82863 8.6101 3.96936 8.46937C4.1101 8.32864 4.30097 8.24958 4.49999 8.24958C4.69901 8.24958 4.88988 8.32864 5.03061 8.46937L12 15.4397L18.9694 8.46937C19.039 8.39969 19.1218 8.34441 19.2128 8.3067C19.3039 8.26899 19.4014 8.24958 19.5 8.24958C19.5985 8.24958 19.6961 8.26899 19.7872 8.3067C19.8782 8.34441 19.9609 8.39969 20.0306 8.46937C20.1003 8.53905 20.1556 8.62178 20.1933 8.71283C20.231 8.80387 20.2504 8.90145 20.2504 9C20.2504 9.09854 20.231 9.19612 20.1933 9.28717C20.1556 9.37821 20.1003 9.46094 20.0306 9.53062Z"
+                            fill="#1A212B"
+                          />
+                        </svg>
 
                       </Disclosure.Button>
                       <Disclosure.Panel className="mt-2 space-y-2">
@@ -274,32 +284,32 @@ export default function NewHeader() {
                   )}
                 </Disclosure>
                 <Link
-                  href="#"
+                  href="/pages/our-work"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-textprimary hover:bg-gray-50"
                 >
                   Work
                 </Link>
                 <Link
-                  href="#"
+                  href="/pages/about-us"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base  leading-7 text-textprimary hover:bg-gray-50"
                 >
-                 About
+                  About
                 </Link>
                 <Link
-                  href="#"
+                  href="/posts"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-textprimary hover:bg-gray-50"
                 >
                   Blogs
                 </Link>
                 <Link
-                  href="#"
+                  href="/pages/contact"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-textprimary hover:bg-gray-50"
                 >
                   Contact
                 </Link>
               </div>
               <div className="py-6">
-                 <ButtonPrimary title="Get Started" url="/" />
+                <ButtonPrimary title="Get Started" url="/pages/contact" />
               </div>
             </div>
           </div>

@@ -2,7 +2,6 @@
 
 import { cn } from "@/app/(app)/utils/cn";
 import React, { useEffect, useState } from "react";
-import PageHeading from "./common/PageHeading";
 
 const cardItems = [
   {
@@ -22,9 +21,14 @@ const cardItems = [
   },
   {
     quote: "We have worked with them in the past and we are continuing as they are doing the Fabulous Job that makes us satisfied. They are time managing, understands the priorities and replies very quickly to your question. I will recommend them on any of your website projects.",
-    name: "Another Review",
-    title: "Owner at supportiveLiving.ca",
+    name: "Kimberly Smith",
+    title: "E-commerce Manager at XYZ Inc",
   },
+  {
+    quote: "We have worked with them in the past and we are continuing as they are doing the Fabulous Job that makes us satisfied. They are time managing, understands the priorities and replies very quickly to your question. I will recommend them on any of your website projects.",
+    name: "Kathrin Lundy",
+    title: "Senior Digital Marketing Manager at XYZ Inc",
+  }
 ]
 
 export const InfiniteMovingCards = ({
