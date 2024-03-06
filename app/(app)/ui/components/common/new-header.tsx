@@ -146,8 +146,8 @@ export default function NewHeader() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg">
-                <div className="p-4">
+              <Popover.Panel className="absolute left-1/2 -translate-x-1/2 z-10 mt-6 w-screen max-w-md xl:max-w-4xl overflow-hidden rounded-3xl bg-white shadow-lg">
+                <div className="p-4 grid grid-cols-1 xl:grid-cols-2 gap-2">
                   {products.map((item) => (
                     <div
                       key={item.name}
