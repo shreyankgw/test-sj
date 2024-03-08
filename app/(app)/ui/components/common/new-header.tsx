@@ -120,7 +120,7 @@ export default function NewHeader() {
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12 text-lg">
           <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-lg leading-6 text-textPrimary">
+            <Popover.Button className="flex items-center gap-x-1 text-lg leading-6 text-textPrimary font-semibold">
               Services
               <svg
                 width="24"
@@ -151,7 +151,7 @@ export default function NewHeader() {
                   {products.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-base leading-6 hover:bg-gray-50"
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                        <Image
@@ -166,7 +166,7 @@ export default function NewHeader() {
                       <div className="flex-auto">
                         <Link
                           href={item.href}
-                          className="block text-textPrimary"
+                          className="block text-textPrimary font-semibold"
                         >
                           {item.name}
                           <span className="absolute inset-0" />
@@ -191,16 +191,16 @@ export default function NewHeader() {
             </Transition>
           </Popover>
 
-          <Link href="#" className="text-lg leading-6 text-textPrimary">
+          <Link href="#" className="text-lg leading-6 text-textPrimary font-semibold">
             Work
           </Link>
-          <Link href="#" className="text-lg leading-6 text-textPrimary">
+          <Link href="#" className="text-lg leading-6 text-textPrimary font-semibold">
             About
           </Link>
-          <Link href="#" className="text-lg leading-6 text-textPrimary">
+          <Link href="#" className="text-lg leading-6 text-textPrimary font-semibold">
             Blogs
           </Link>
-          <Link href="#" className="text-lg leading-6 text-textPrimary">
+          <Link href="#" className="text-lg leading-6 text-textPrimary font-semibold">
             Contact
           </Link>
         </Popover.Group>

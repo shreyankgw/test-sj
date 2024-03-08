@@ -4,6 +4,9 @@ import { Slide } from "./ui/animation/Slide";
 import { InfiniteMovingCards } from "./ui/components/infinite-moving-cards";
 import  Slider  from "./ui/components/slider";
 import TrustedBy from "./ui/components/TrustedBy";
+import MainFeatures from "./ui/components/MainFeatures";
+import GetInTouch from "./ui/components/common/GetInTouch";
+import HomepageFeatures from "./ui/components/HomepageFeatures";
 
 export default async function Home() {
     
@@ -12,17 +15,23 @@ export default async function Home() {
       <Slide>
          <Hero />
       </Slide>
-      <Slide delay={0.1}>
+      <Slide delay={0.07}>
         <TrustedBy />
       </Slide>
       <Slide delay={0.14}>
-        <FeaturedBlogs categoryName="Featured" />
+        <MainFeatures />
       </Slide>
       <Slide delay={0.21}>
-        <InfiniteMovingCards direction="right" speed="slow" pauseOnHover={true} className="xl:max-w-screen-2xl w-full mx-auto my-10" />
+        <HomepageFeatures />
       </Slide>
       <Slide delay={0.28}>
-        <Slider />
+        <InfiniteMovingCards direction="right" speed="slow" pauseOnHover={true} className="xl:max-w-screen-2xl w-full mx-auto my-10" />
+      </Slide>
+      <Slide delay={0.35}>
+        <FeaturedBlogs categoryName="Featured" />
+      </Slide>
+      <Slide delay={0.42}>
+        <GetInTouch />
       </Slide>
     </main>
   );

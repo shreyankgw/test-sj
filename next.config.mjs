@@ -1,13 +1,13 @@
 /** @type {import('next').NextConfig} */
+
+const hostnames = ["cdn.sanity.io", "dummyimage.com"]
 const nextConfig = {
     images: {
-        remotePatterns: [
-          {
+        remotePatterns: hostnames.map((hostname) => ({
             protocol: "https",
-            hostname: "cdn.sanity.io",
+            hostname,
             port: "",
-          },
-        ]
+        })),
     }
 }
 

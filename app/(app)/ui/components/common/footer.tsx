@@ -116,7 +116,7 @@ return (
             }
  
             <div className="space-y-6 col-span-2">
-                <h1 className="text-lg font-semibold text-textPrimary">Subscribe to our newsletter</h1>
+                <h1 className="text-lg font-semibold text-textPrimary">Subscribe to our latest releases. No spam !</h1>
                 <form className="w-full max-w-2xl flex flex-col xl:flex-row gap-3">
                     <input type="email" placeholder="hello@gmail.com" className="w-full sm:w-max px-5 py-2.5 rounded-full outline-none flex-1 bg-bgOverlay bg-opacity-40 focus:ring-1 focus:ring-textPrimary focus:text-textPrimary" />
                     <button className="outline-none w-full py-2.5 px-5 sm:w-max bg-brandPrimary text-white rounded-full flex items-center justify-center">

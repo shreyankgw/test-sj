@@ -20,14 +20,14 @@ const cardItems = [
     title: "Manager at GTA Vapes",
   },
   {
-    quote: "We have worked with them in the past and we are continuing as they are doing the Fabulous Job that makes us satisfied. They are time managing, understands the priorities and replies very quickly to your question. I will recommend them on any of your website projects.",
-    name: "Kimberly Smith",
-    title: "E-commerce Manager at XYZ Inc",
+    quote: "Their efficiency and dependability stand out as they adhere to their schedules and bring out the finest in our project. It's as if we have our team members collaborating with us. They contribute valuable insights and their investigative work is top-notch.",
+    name: "Frank Crawford",
+    title: "E-commerce Manager at Dyna",
   },
   {
-    quote: "We have worked with them in the past and we are continuing as they are doing the Fabulous Job that makes us satisfied. They are time managing, understands the priorities and replies very quickly to your question. I will recommend them on any of your website projects.",
+    quote: "The SJ Development team exceeded our expectations with their innovative Shopify solutions, turning our ideas into a seamless online experience. Their personalized approach and exceptional research skills propelled our e-commerce site to new heights. Truly a game-changer in website development",
     name: "Kathrin Lundy",
-    title: "Senior Digital Marketing Manager at XYZ Inc",
+    title: "Senior Digital Marketing Manager at Posedla",
   }
 ]
 
@@ -104,7 +104,7 @@ export const InfiniteMovingCards = ({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20  max-w-7xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_5%,white_95%,transparent)]",
+        "scroller relative z-20  max-w-7xl xl:max-w-screen-2xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_5%,white_95%,transparent)]",
         className
       )}
     >
@@ -118,11 +118,7 @@ export const InfiniteMovingCards = ({
       >
         {cardItems.map((item, idx) => (
           <li
-            className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-borderPrimary px-8 py-6 md:w-[450px]"
-            style={{
-              background:
-                "linear-gradient(180deg, rgba(246,248,251,0.6) 0%, rgba(203,212,225,0.6) 100%)"
-            }}
+            className="w-[350px] max-w-full relative rounded-2xl border flex-shrink-0 border-borderPrimary px-8 py-6 md:w-[450px] bg-bgInformative"           
             key={item.name}
           >
             <blockquote>

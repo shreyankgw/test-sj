@@ -24,13 +24,7 @@ export default function Hero() {
               href="#"
               className="flex items-center h-12 px-6 rounded-full bg-brandPrimary text-white border border-brandPrimary"
             >
-              Get Started
-            </Link>
-            <Link
-              href="#"
-              className="flex items-center h-12 px-6 rounded-full bg-bgSecondary text-brandPrimary border border-textSecondary"
-            >
-              Learn More
+              Work With Us 🤝
             </Link>
           </div>
           <div className="text-left grid lg:grid-cols-3 p-6 rounded-2xl bg-gradient-to-tr from-gray-50 to-gray-100 border border-gray-100 max-w-2xl lg:max-w-5xl mx-auto lg:divide-x divide-y lg:divide-y-0 divide-gray-300">

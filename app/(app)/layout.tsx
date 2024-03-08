@@ -5,6 +5,7 @@ import  NewHeader  from "@/app/(app)/ui/components/common/new-header";
 import  FooterBlock  from "@/app/(app)/ui/components/common/footer";
 import Banner from "@/app/(app)/ui/components/common/banner";
 import Script from "next/script";
+import LiveChat from "./ui/components/common/LiveChat";
 
 
 const options = {
@@ -49,6 +50,7 @@ export default function RootLayout({
         <NewHeader />
         {children}
         <FooterBlock />
+        <LiveChat />
       </body>
       <Script
         async
