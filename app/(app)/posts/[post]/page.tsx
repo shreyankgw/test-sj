@@ -1,8 +1,8 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import { client } from "@/sanity/lib/client";
 import type { Post } from "@/app/(app)/lib/definitions";
-import { notFound } from "next/navigation";
 import { Slide } from "../../ui/animation/Slide";
 import { formatDate } from "../../utils/date";
 import { readTime } from "../../utils/readTime";
@@ -10,6 +10,9 @@ import { PortableText,toPlainText } from "@portabletext/react";
 import PageHeading from "../../ui/components/common/PageHeading";
 import urlBuilder from "@sanity/image-url";
 import { CustomPortableText } from "../../ui/components/common/CustomPortableText";
+import { useEffect, useState } from "react";
+import { fetchPostData } from "../../utils/dataFetcher";
+import { urlFor } from "../../utils/urlFor";
 
 type Props = {
   params: {
@@ -17,28 +20,31 @@ type Props = {
   };
 };
 
-async function fetchPost(slug: string): Promise<Post> {
-  const query = `*[_type == 'post' && slug.current == $slug][0]`;
-  const params = { slug };
-  const post = await client.fetch(query, params);
-  return post;
-}
+export default function Article({ params }: Props) {
+ 
+   const [post, setPost] = useState<Post | null>(null);
+   
+   useEffect(() => {
+       if(!params?.post) return;
 
-export default async function Article({ params }: Props) {
-  const slug = params.post;
-  const post: Post = await fetchPost(slug);
+      const fetchAndSetPost = async () => {
+        const postData = await fetchPostData(params.post);
+        setPost(postData);
+        console.log(postData.categories);
+      }
+      fetchAndSetPost().catch(console.error);
+   }, [params.post]);
+
+   if(!post){
+     return <div>Loading...</div>
+   }
 
   const words = toPlainText(post.body!);
-
   const mainImage = post.mainImage && urlBuilder(client).image(post.mainImage).url();
 
-  if (!post) {
-    notFound();
-  }
-
   return (
-    <main className="flex flex-col min-h-screen lg:max-w-7xl xl:max-w-screen-2xl mx-auto">
-      <header className="my-10">
+    <main className="flex flex-col min-h-screen lg:max-w-7xl xl:max-w-screen-2xl mx-auto p-6 lg:px-8">
+      <header>
         <Slide className="relative flex items-center gap-x-2 border-b border-zinc-200 pb-8">
           <Link
             href="/posts"
@@ -66,7 +72,7 @@ export default async function Article({ params }: Props) {
 
       <article>
         <Slide className="flex lg:flex-row flex-col relative" delay={0.1}>
-          <div className="min-h-full lg:border-r border-r-0 border-zinc-800 basis-3/4 pt-10 pb-4 lg:pr-6 px-0">
+          <div className="min-h-full lg:border-r border-r-0 border-zinc-200 basis-3/4 pt-10 pb-4 lg:pr-6 px-0">
             <div className="flex items-center flex-wrap gap-4 text-md mb-8 text-zinc-600">
               <div className="flex items-center gap-2">
                 <svg
@@ -124,6 +130,47 @@ export default async function Article({ params }: Props) {
               <PortableText value={post.body!} components={CustomPortableText} />
             </div>
           </div>
+
+          <aside className="flex flex-col lg:max-h-full h-max gap-y-8 sticky top-2 bottom-auto right-0 basis-1/4 py-10 lg:px-6 px-0">
+              <section className="border-b border-zinc-200 pb-10">
+                 <p className="text-textSecondary text-sm">Written By</p>
+                 <address className="flex items-center gap-x-3 mt-4 not-italic">
+                   <div className="relative w-12 h-12">
+                     <Image   
+                       src={post.author?.imageUrl && post.author.imageUrl || ''}
+                       alt={post.author?.name && post.author.name || 'empty image'}
+                       className="rounded-full bg-zinc-300 object-cover"
+                       height={80}
+                       width={80}
+                       loading="lazy"
+                       placeholder="blur"
+                       blurDataURL={`/_next/image?url=${post.author?.imageUrl}&w=16&q=1`}
+                     />
+                   </div>
+                   <div rel="author">
+                     <h3 className="font-semibold text-lg tracking-tight">
+                       {post.author?.name && post.author.name || 'Anoynomous Member'}
+                     </h3>
+                   </div>
+                 </address>
+              </section>
+
+              <section className="border-b border-zinc-200 pb-10">
+                <p className="text-textSecondary text-xl font-semibold mb-4 tracking-tight">Categories</p>
+                <ul className="flex flex-wrap gap-2 items-center tracking-tight">
+                  {post.categories && post.categories.map((category: string) => (
+                    <li key={category} className=" bg-zinc-100 border border-zinc-200 rounded-md px-2 py-1 text-sm">
+                      {category}
+                    </li>
+                  ))}
+                </ul>
+              </section>
+
+              <section className="border-b border-zinc-200 pb-10">
+                 <h3 className="text-xl font-semibold mb-4 tracking-tight text-textSecondary">Share</h3>
+                 
+              </section>
+          </aside>
         </Slide>
       </article>
     </main>

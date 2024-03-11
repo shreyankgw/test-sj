@@ -16,7 +16,13 @@ export type Post = {
     mainImage?: string;
     _updatedAt?: string;
     _createdAt?: string;
-}
+    author?: {
+        name?: string;
+        image?: string;
+        imageUrl?: string;
+    };
+    categories?: string[];
+};
 
 export interface RealTimePostProps {
     postId: string;
