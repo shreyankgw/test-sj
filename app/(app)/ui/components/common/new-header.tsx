@@ -191,16 +191,16 @@ export default function NewHeader() {
             </Transition>
           </Popover>
 
-          <Link href="#" className="text-lg leading-6 text-textPrimary font-semibold">
+          <Link href="/pages/our-work" className="text-lg leading-6 text-textPrimary font-semibold">
             Work
           </Link>
-          <Link href="#" className="text-lg leading-6 text-textPrimary font-semibold">
+          <Link href="/pages/about-us" className="text-lg leading-6 text-textPrimary font-semibold">
             About
           </Link>
-          <Link href="#" className="text-lg leading-6 text-textPrimary font-semibold">
+          <Link href="/posts" className="text-lg leading-6 text-textPrimary font-semibold">
             Blogs
           </Link>
-          <Link href="#" className="text-lg leading-6 text-textPrimary font-semibold">
+          <Link href="/pages/contact" className="text-lg leading-6 text-textPrimary font-semibold">
             Contact
           </Link>
         </Popover.Group>

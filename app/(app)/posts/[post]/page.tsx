@@ -12,7 +12,7 @@ import urlBuilder from "@sanity/image-url";
 import { CustomPortableText } from "../../ui/components/common/CustomPortableText";
 import { useEffect, useState } from "react";
 import { fetchPostData } from "../../utils/dataFetcher";
-import { urlFor } from "../../utils/urlFor";
+import  SharePost  from "../../ui/components/common/SharePost";
 
 type Props = {
   params: {
@@ -133,11 +133,11 @@ export default function Article({ params }: Props) {
 
           <aside className="flex flex-col lg:max-h-full h-max gap-y-8 sticky top-2 bottom-auto right-0 basis-1/4 py-10 lg:px-6 px-0">
               <section className="border-b border-zinc-200 pb-10">
-                 <p className="text-textSecondary text-sm">Written By</p>
+                 <p className="text-textSecondary text-xl font-semibold mb-4 tracking-tight">Written By</p>
                  <address className="flex items-center gap-x-3 mt-4 not-italic">
                    <div className="relative w-12 h-12">
                      <Image   
-                       src={post.author?.imageUrl && post.author.imageUrl || ''}
+                       src={post.author?.imageUrl && post.author.imageUrl || 'https://dummyimage.com/80x80'}
                        alt={post.author?.name && post.author.name || 'empty image'}
                        className="rounded-full bg-zinc-300 object-cover"
                        height={80}
@@ -159,17 +159,19 @@ export default function Article({ params }: Props) {
                 <p className="text-textSecondary text-xl font-semibold mb-4 tracking-tight">Categories</p>
                 <ul className="flex flex-wrap gap-2 items-center tracking-tight">
                   {post.categories && post.categories.map((category: string) => (
-                    <li key={category} className=" bg-zinc-100 border border-zinc-200 rounded-md px-2 py-1 text-sm">
+                    <li key={category} className="bg-gray-200 border border-zinc-200 rounded-md px-4 py-2 text-sm rounded-xl">
                       {category}
                     </li>
                   ))}
                 </ul>
               </section>
 
-              <section className="border-b border-zinc-200 pb-10">
-                 <h3 className="text-xl font-semibold mb-4 tracking-tight text-textSecondary">Share</h3>
-                 
-              </section>
+              <SharePost
+                title={post.title && post.title || 'empty title'}
+                slug={post.slug && post.slug.current || 'empty slug'}
+                body={post.body && post.body || 'empty body'}
+              />
+              
           </aside>
         </Slide>
       </article>
