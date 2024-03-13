@@ -45,12 +45,14 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${lexend.className} antialised`}>
+      <div>  {/* Adding this div wrapper to make sure the popover from headlessui works perfectly, it was not closing before when you click outside of it. */}
       <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"></div>
         <Banner/>
         <NewHeader />
         {children}
         <FooterBlock />
         <LiveChat />
+      </div>
       </body>
       <Script
         async

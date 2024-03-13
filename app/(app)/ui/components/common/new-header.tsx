@@ -74,7 +74,7 @@ export default function NewHeader() {
   }, [scrollY]);
 
   return (
-    <header className={`${isSticky ? "fixed top-0 inset-0" : "relative"} z-50 w-full border-b border-b-gray-100 bg-bgPrimary bg-opacity-80 backdrop-filter backdrop-blur-xl h-20`}>
+    <header className={`${isSticky ? "fixed top-0 inset-0" : "relative"} z-50  w-full border-b border-b-gray-100 bg-bgPrimary bg-opacity-80 backdrop-filter backdrop-blur-xl h-20`}>
       <nav
         className="mx-auto flex lg:max-w-7xl xl:max-w-screen-2xl items-center justify-between p-6 lg:px-8 w-full h-full"
         aria-label="Global"
@@ -164,13 +164,14 @@ export default function NewHeader() {
                         <span className="sr-only">{item.name}</span>
                       </div>
                       <div className="flex-auto">
-                        <Link
+                        <Popover.Button
+                          as={Link}
                           href={item.href}
                           className="block text-textPrimary font-semibold"
                         >
                           {item.name}
                           <span className="absolute inset-0" />
-                        </Link>
+                        </Popover.Button>
                         <p className="mt-1 text-textSecondary">{item.description}</p>
                       </div>
                     </div>
@@ -178,13 +179,14 @@ export default function NewHeader() {
                 </div>
                 <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
                   {callsToAction.map((item) => (
-                    <Link
+                    <Popover.Button
+                      as={Link}
                       key={item.name}
                       href={item.href}
                       className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
                     >
                       {item.name}
-                    </Link>
+                    </Popover.Button>
                   ))}
                 </div>
               </Popover.Panel>
