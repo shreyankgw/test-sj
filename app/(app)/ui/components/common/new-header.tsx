@@ -274,7 +274,7 @@ export default function NewHeader() {
                         {[...products, ...callsToAction].map((item) => (
                           <Disclosure.Button
                             key={item.name}
-                            as="a"
+                            as={Link}
                             href={item.href}
                             className="block rounded-lg py-2 pl-6 pr-3 text-sm leading-7 text-textprimary hover:bg-gray-50"
                           >
@@ -288,29 +288,33 @@ export default function NewHeader() {
                 <Link
                   href="/pages/our-work"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-textprimary hover:bg-gray-50"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   Work
                 </Link>
                 <Link
                   href="/pages/about-us"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base  leading-7 text-textprimary hover:bg-gray-50"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   About
                 </Link>
                 <Link
                   href="/posts"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-textprimary hover:bg-gray-50"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   Blogs
                 </Link>
                 <Link
                   href="/pages/contact"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-textprimary hover:bg-gray-50"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   Contact
                 </Link>
               </div>
-              <div className="py-6">
+              <div className="py-6" onClick={() => setMobileMenuOpen(false)}>
                 <ButtonPrimary title="Get Started" url="/pages/contact" />
               </div>
             </div>
