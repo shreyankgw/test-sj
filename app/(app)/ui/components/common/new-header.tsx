@@ -210,6 +210,9 @@ export default function NewHeader() {
           <ButtonPrimary title="Get Started" url="/" />
         </div>
       </nav>
+
+      {/* Mobile menu, show/hide based on menu open state. Below add the transition and some framer motion magic for animated mobile menu */}
+ 
       <Dialog
         as="div"
         className="lg:hidden"
@@ -321,6 +324,7 @@ export default function NewHeader() {
           </div>
         </Dialog.Panel>
       </Dialog>
+      
     </header>
   );
 }

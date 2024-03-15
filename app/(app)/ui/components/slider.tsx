@@ -33,12 +33,12 @@ export default function Slider() {
         }}
         className="z-50 flex flex-col justify-center items-center"
       >
-        <motion.p className="font-bold text-xl md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
-        Shopify Mastery Fueled By <br/> Passion.
+        <motion.p className="font-bold text-xl md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-gray-50 to-gray-400 py-4">
+            Discover our latest projects <br/> that defines our digital excellence.
         </motion.p>
-        <button className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">
-          <span>Join now →</span>
-          <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
+        <button className="px-4 py-2 backdrop-blur-sm border bg-brandPrimary/10 border-brandSecondary/20 text-white mx-auto text-center rounded-full relative mt-4">
+          <span>Get Free Consultation →</span>
+          <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-brandPrimary to-transparent" />
         </button>
       </motion.div>
     </ImagesSlider>

@@ -13,7 +13,7 @@ export default function PageHeading({ title, description, children }: HeadingTyp
         <h1 className="font-bold tracking-tight sm:text-5xl text-3xl mb-6 lg:leading-[3.7rem] text-textPrimary">
           {title}
         </h1>
-        <p className="text-lg text-textSecondary leading-relaxed">
+        <p className="text-lg text-textSecondary leading-relaxed max-w-4xl">
           {description}
         </p>
         {children}
