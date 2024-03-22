@@ -1,6 +1,7 @@
 import { Slide } from "../../ui/animation/Slide";
 import { HeroProjects } from "../../ui/components/HeroParallax";
 import PageHeading from "../../ui/components/common/PageHeading";
+import OurWork from "../../ui/components/OurWork";
 
 export default async function Home() {
   return (
@@ -15,6 +16,7 @@ export default async function Home() {
         />
       </Slide>
       {/* Below we will render some of our projects with a breif case study and a link to the project. */}
+      <OurWork />
     </main>
   );
 }
