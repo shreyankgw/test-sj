@@ -14,98 +14,98 @@ import Link from "next/link";
 
 export const products = [
     {
-      title: "Moonbeam",
-      link: "https://gomoonbeam.com",
+      title: "Vraj & Co.",
+      link: "https://vraj-co.myshopify.com/",
       thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+        "/images/projects/ssvraj.png",
     },
     {
-      title: "Cursor",
-      link: "https://cursor.so",
+      title: "Dyna",
+      link: "https://dyna-metro-inc.myshopify.com/",
       thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+        "/images/projects/ssdyna.png",
     },
     {
-      title: "Rogue",
-      link: "https://userogue.com",
+      title: "Village Juicery",
+      link: "https://www.villagejuicery.com/",
       thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/rogue.png",
-    },
-  
-    {
-      title: "Editorially",
-      link: "https://editorially.org",
-      thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/editorially.png",
-    },
-    {
-      title: "Editrix AI",
-      link: "https://editrix.ai",
-      thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/editrix.png",
-    },
-    {
-      title: "Pixel Perfect",
-      link: "https://app.pixelperfect.quest",
-      thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
+        "/images/projects/ssvj.png",
     },
   
     {
-      title: "Algochurn",
-      link: "https://algochurn.com",
+      title: "Made4Fitness",
+      link: "https://made4fitness.com/",
+      thumbnail:
+        "/images/projects/ssmade4fitness.png",
+    },
+    {
+      title: "Kinnls",
+      link: "https://store.kinnls.com/",
+      thumbnail:
+        "/images/projects/sskinnls.png",
+    },
+    {
+      title: "Salt By The Caza Project",
+      link: "https://saltbythecazaproject.com/",
+      thumbnail:
+        "/images/projects/sssalt.png",
+    },
+  
+    {
+      title: "GTA Vapes",
+      link: "https://gtavapes.com/",
       thumbnail:
         "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
     },
     {
-      title: "Aceternity UI",
-      link: "https://ui.aceternity.com",
+      title: "Type 2 Campers",
+      link: "https://type2campers.com/",
       thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
+        "/images/projects/sstype2campers.png",
     },
     {
-      title: "Tailwind Master Kit",
-      link: "https://tailwindmasterkit.com",
+      title: "Supportive Living",
+      link: "https://www.supportiveliving.ca/",
       thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
+        "/images/projects/sssupportiveliving.png",
     },
     {
-      title: "SmartBridge",
-      link: "https://smartbridgetech.com",
+      title: "Alabama Sawyer",
+      link: "https://alasaw.com/",
       thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
+        "/images/projects/ssalasaw.png",
     },
     {
-      title: "Renderwork Studio",
-      link: "https://renderwork.studio",
+      title: "Gemme Moi",
+      link: "https://gemmemoi.ca/",
       thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
+        "/images/projects/ssgemmemoi.png",
     },
   
     {
-      title: "Creme Digital",
-      link: "https://cremedigital.com",
+      title: "Bloom Robins",
+      link: "https://www.bloomrobbins.com/",
       thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
+        "/images/projects/ssbloom.png",
     },
     {
-      title: "Golden Bells Academy",
-      link: "https://goldenbellsacademy.com",
+      title: "Posedla",
+      link: "https://posedla.com/en-us",
       thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
+        "/images/projects/ssposedla.png",
     },
     {
-      title: "Invoker Labs",
-      link: "https://invoker.lol",
+      title: "Umbra",
+      link: "https://ca.umbra.com/",
       thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/invoker.png",
+        "/images/projects/ssumbra.png",
     },
     {
-      title: "E Free Invoice",
-      link: "https://efreeinvoice.com",
+      title: "TCH Hardware",
+      link: "https://ca.tchweb.com/",
       thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
-    },
+        "/images/projects/sstch.png",
+    }
   ];
 
 
@@ -150,13 +150,13 @@ const HeroParallax = ({
       springConfig
     );
     const translateY = useSpring(
-      useTransform(scrollYProgress, [0, 0.2], [-700, 200]),
+      useTransform(scrollYProgress, [0, 0.2], [-700, 0]),
       springConfig
     );
     return (
       <div
         ref={ref}
-        className="h-[220vh] md:h-[200vh] lg:h-[180vh] pt-40 pb-5 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+        className="h-full pt-40 pb-5 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
       >
         <Header />
         <motion.div
@@ -168,7 +168,7 @@ const HeroParallax = ({
           }}
           className=""
         >
-          <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
+          <motion.div className="flex flex-row-reverse  space-x-12 xl:space-x-20 space-x-reverse mb-20">
             {firstRow.map((product) => (
               <ProductCard
                 product={product}
@@ -177,7 +177,7 @@ const HeroParallax = ({
               />
             ))}
           </motion.div>
-          <motion.div className="flex flex-row  mb-20 space-x-20 ">
+          <motion.div className="flex flex-row mb-20 space-x-12 xl:space-x-20">
             {secondRow.map((product) => (
               <ProductCard
                 product={product}
@@ -186,7 +186,7 @@ const HeroParallax = ({
               />
             ))}
           </motion.div>
-          <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
+          <motion.div className="flex flex-row-reverse space-x-reverse space-x-12 xl:space-x-20">
             {thirdRow.map((product) => (
               <ProductCard
                 product={product}
@@ -202,7 +202,7 @@ const HeroParallax = ({
    
   export const Header = () => {
     return (
-      <div className="max-w-7xl xl:max-w-screen-2xl relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0">
+      <div className="max-w-7xl xl:max-w-screen-2xl relative mx-auto py-20  px-6 lg:px-8 w-full left-0 top-0">
         <h1 className="text-4xl md:text-7xl font-bold text-textPrimary">
           The Ultimate <br /> Development Studio
         </h1>
@@ -235,7 +235,7 @@ const HeroParallax = ({
           y: -20,
         }}
         key={product.title}
-        className="group/product h-96 w-[30rem] relative flex-shrink-0"
+        className="group/product h-48 w-[15rem] md:h-96 md:w-[30rem] relative flex-shrink-0"
       >
         <Link
           href={product.link}

@@ -126,7 +126,7 @@ const FooterBlock = () => {
 
         <div className="space-y-6 col-span-2">
           <h1 className="text-lg font-semibold text-textPrimary">
-            Subscribe to our latest releases. No spam !
+            Receive Shopify Tips & Tricks. No spam !
           </h1>
           <form className="w-full max-w-2xl flex flex-col xl:flex-row gap-3">
             <input
