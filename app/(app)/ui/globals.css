@@ -56,6 +56,15 @@
   font-size: 12px;
   line-height: 18px;
 }
+.about-transform {
+  transform: translate3d(0, 0, 0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
+}
+
+.about-mask {
+    -webkit-mask-image: radial-gradient(50% 45% at 50% 55%,white,transparent);
+    mask-image: radial-gradient(50% 45% at 50% 55%,white,transparent);
+}
+
 
 
 @media (prefers-color-scheme: dark) {
