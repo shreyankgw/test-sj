@@ -7,14 +7,13 @@ import TrustedBy from "./ui/components/TrustedBy";
 import MainFeatures from "./ui/components/MainFeatures";
 import GetInTouch from "./ui/components/common/GetInTouch";
 import HomepageFeatures from "./ui/components/HomepageFeatures";
+import BackgroundVideoWithText from "./ui/components/common/BackgroundVideo";
 
 export default async function Home() {
     
   return (
-    <main className="flex flex-col min-h-screen">
-      <Slide>
-         <Hero />
-      </Slide>
+    <main className="flex flex-col min-h-screen">    
+        <BackgroundVideoWithText videoSources={{ small: "/video/small_video.mp4", large: "/video/homepage_video.mp4" }} posters={{ small: "/video/thumbnails/hero_desktop.png", large: "/video/thumbnails/hero_mobile.png" }} videoDescription="Shopify Mastery Fueled By Passion" /> 
       <Slide delay={0.07}>
         <TrustedBy />
       </Slide>
