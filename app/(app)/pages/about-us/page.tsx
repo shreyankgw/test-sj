@@ -23,15 +23,14 @@ export default async function Home() {
               <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                 <div className="w-full max-w-xl lg:shrink-0 lg:max-w-2xl">
                   <h1 className="text-4xl font-bold tracking-tight text-textPrimary sm:text-6xl">
-                    We’re changing the way people connect.
+                    We’re on a mission to make online shopping better.
                   </h1>
                   <p className="relative mt-6 text-lg leading-8 text-textSecondary sm:max-w-md lg:max-w-none">
-                    Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in
-                    quis cupidatat mollit aute velit. Et labore commodo nulla
-                    aliqua proident mollit ullamco exercitation tempor. Sint
-                    aliqua anim nulla sunt mollit id pariatur in voluptate
-                    cillum. Eu voluptate tempor esse minim amet fugiat veniam
-                    occaecat aliqua.
+                    We create the solutions that is supported by latest web technologies with 
+                    Performance and accessibility in mind. Our User Experience skills makes sure that 
+                    users feel ease while shopping and checkout online, resulting in more conversion 
+                    for your business. We adjust ourselves according to your needs without having to 
+                    forcing you into something that is not what you want. 
                   </p>
                 </div>
                 <div className="mt-14 flex justify-end sm:justify-start gap-8 sm:-mt-44 sm:pl-20 lg:mt-0 lg:pl-0">
@@ -91,31 +90,21 @@ export default async function Home() {
         <div className="mx-auto -mt-12 max-w-7xl xl:max-w-screen-2xl px-6 sm:mt-0 lg:px-8 xl:-mt-8">
           <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
             <h2 className="text-3xl font-bold tracking-tight text-textPrimary sm:text-4xl">
-              Our mission
+              Our mission & vision
             </h2>
             <div className="mt-6 flex flex-col gap-x-4 gap-y-20 lg:flex-row">
               <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
                 <p className="text-xl text-textSecondary leading-8">
-                  Aliquet nec orci mattis amet quisque ullamcorper neque, nibh
-                  sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque
-                  id at vitae feugiat egestas ac. Diam nulla orci at in viverra
-                  scelerisque eget. Eleifend egestas fringilla sapien.
+                Our mission is to get the best website built for you so you can achieve your business goals while working on your business and stay worry-free from maintaining/developing the websites.  
+                Our vision is to the make solutions that makes a difference. We bring years of design and development experience to the table, and we believe in great communication and honesty 
+                at our core. We work not as an agency but as a family 💙.
                 </p>
                 <div className="mt-10 max-w-xl text-base leading-7 text-textSecondary">
                   <p>
-                    Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
-                    risus enim. Mattis mauris semper sed amet vitae sed turpis
-                    id. Id dolor praesent donec est. Odio penatibus risus
-                    viverra tellus varius sit neque erat velit. Faucibus commodo
-                    massa rhoncus, volutpat. Dignissim sed eget risus enim.
-                    Mattis mauris semper sed amet vitae sed turpis id.
+                  The SJ Development was founded for the purpose of helping small businesses to grow and for big businesses to make an impact in the market without paying hefty charges to digital agencies and still not getting the desired results. It Was Founded by me(a.k.a. Shreyank Jadiya) as part of a side hustle into web development projects and became a full-time jobs leading to the success of the projects. We then grew our team across north America to take care of growing workloads and from there we never stopped looking back. Our name might be new in the market but we are the old players in this game who will play a key role in helping your businesses.
                   </p>
                   <p className="mt-10">
-                    Et vitae blandit facilisi magna lacus commodo. Vitae sapien
-                    duis odio id et. Id blandit molestie auctor fermentum
-                    dignissim. Lacus diam tincidunt ac cursus in vel. Mauris
-                    varius vulputate et ultrices hac adipiscing egestas. Iaculis
-                    convallis ac tempor et ut. Ac lorem vel integer orci.
+                  We are a leading web development firm and e-commerce experts. We breathe Shopify and have vast experience in creating customized storefronts as per business needs. You might be wondering, well what is the difference here than agency? We are not an agency, we are your employees who work in accordance with you as per your timelines and give the best possible results, so your business can achieve new heights.
                   </p>
                 </div>
               </div>
@@ -123,26 +112,26 @@ export default async function Home() {
                 <dl className="w-64 xl:w-80 space-y-8 text-base">
                   <div className="flex flex-col-reverse gap-y-8">
                     <dt className="text-base text-textSecondary leading-7">
-                      Transactions every 24 hours
+                      Increased Conversions in last year
                     </dt>
                     <dd className="text-5xl font-bold tracking-tight text-textPrimary">
-                      44 million
+                      10+ million
                     </dd>
                   </div>
                   <div className="flex flex-col-reverse gap-y-8">
                     <dt className="text-base text-textSecondary leading-7">
-                      Assets under holding
+                      Custom Solutions Deployed
                     </dt>
                     <dd className="text-5xl font-bold tracking-tight text-textPrimary">
-                      $119 trillion
+                      500+
                     </dd>
                   </div>
                   <div className="flex flex-col-reverse gap-y-8">
                     <dt className="text-base text-textSecondary leading-7">
-                      New users annually
+                      Best User Experience Ratings 
                     </dt>
                     <dd className="text-5xl font-bold tracking-tight text-textPrimary">
-                      46,000
+                      100+
                     </dd>
                   </div>
                 </dl>
@@ -167,63 +156,59 @@ export default async function Home() {
               Our values
             </h2>
             <p className="mt-6 text-lg leading-8 text-textSecondary">
-              Lorem ipsum dolor sit amet consect adipisicing elit. Possimus
-              magnam voluptatum cupiditate veritatis in accusamus quisquam.
+              We work as close-knit family and have strong values that supports our growth and makes us the best for what we do.
             </p>
           </div>
           <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 lg:mx-0 lg:max-w-none sm:grid-cols-2 lg:grid-cols-3">
             <div>
-              <dt className="font-semibold text-textPrimary">Be world-class</dt>
+              <dt className="font-semibold text-textPrimary">We 💙 What we do</dt>
               <dd className="mt-1 text-textSecondary">
-                Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed
-                sint et magnam exercitationem quia. Ullam voluptas nihil vitae
-                dicta molestiae et. Aliquid velit porro vero.
+                A small team where everyone enjoys their passion. We are not bound by
+                boundaries as in a desginer can not learn coding or vice-versa. We help
+                each other by learning and improving
               </dd>
             </div>
             <div>
               <dt className="font-semibold text-textPrimary">
-                Share everything you know
+                Client First
               </dt>
               <dd className="mt-1 text-textSecondary">
-                Mollitia delectus a omnis. Quae velit aliquid. Qui nulla maxime
-                adipisci illo id molestiae. Cumque cum ut minus rerum architecto
-                magnam consequatur. Quia quaerat minima.
+                Our client is our top-most priority. We make sure we communicate well with 
+                all our clients by making sure their questions are answered. We do not upsell us or any other brand
+                but we give recommendations to what you can do best in any situation.
               </dd>
             </div>
             <div>
               <dt className="font-semibold text-textPrimary">
-                Always learning
+                Learning with Fun
               </dt>
               <dd className="mt-1 text-textSecondary">
-                Aut repellendus et officiis dolor possimus. Deserunt velit quasi
-                sunt fuga error labore quia ipsum. Commodi autem voluptatem nam.
-                Quos voluptatem totam.
+                We believe in learning with fun as with learning comes growth and one should keep themselves updated with the latest
+                knowledge. Our Hackathons are fun with lots of new learnings.
               </dd>
             </div>
             <div>
               <dt className="font-semibold text-textPrimary">Be supportive</dt>
               <dd className="mt-1 text-textSecondary">
-                Magnam provident veritatis odit. Vitae eligendi repellat non.
-                Eum fugit impedit veritatis ducimus. Non qui aspernatur
-                laudantium modi. Praesentium rerum error deserunt harum.
+                Supporting each other is the best thing we do, as we know everyone has their own 
+                family and outside work life. We support our small family by making sure we understand 
+                everyone's life situations.
               </dd>
             </div>
             <div>
               <dt className="font-semibold text-textPrimary">
-                Take responsibility
+                Communication is the key
               </dt>
               <dd className="mt-1 text-textSecondary">
-                Sit minus expedita quam in ullam molestiae dignissimos in harum.
-                Tenetur dolorem iure. Non nesciunt dolorem veniam necessitatibus
-                laboriosam voluptas perspiciatis error.
+                We believe in communication very strongly as poor communication leads to project delays and potential market loss to big brands. 
+                We work in sprints on all of our projects to make sure we cover everything while directly communicating all status updates with you.
               </dd>
             </div>
             <div>
-              <dt className="font-semibold text-textPrimary">Enjoy downtime</dt>
+              <dt className="font-semibold text-textPrimary">Honesty</dt>
               <dd className="mt-1 text-textSecondary">
-                Ipsa in earum deserunt aut. Quos minus aut animi et soluta.
-                Ipsum dicta ut quia eius. Possimus reprehenderit iste aspernatur
-                ut est velit consequatur distinctio.
+                We belive Honesty can bring great results. We provide all information upfront without hiding important stuff so that it saves lot of effort/time and money
+                for our clients. 
               </dd>
             </div>
           </dl>
@@ -265,7 +250,7 @@ export default async function Home() {
           </div>
           <div className="mx-auto max-w-7xl xl:max-w-screen-2xl px-6 lg:px-8">
             <h2 className="text-center font-semibold text-textPrimary text-lg leading-8">
-              Trusted by the world’s most innovative teams
+              Working with the ecommerce world’s most innovative teams
             </h2>
             <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
               <img
@@ -361,12 +346,10 @@ export default async function Home() {
         <div className="mx-auto my-32 max-w-7xl xl:max-w-screen-2xl px-6 lg:px-8 sm:my-48">
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className="text-3xl font-bold tracking-tight text-textPrimary sm:text-4xl">
-              Our team
+              Our Superheros
             </h2>
             <p className="mt-6 text-lg leading-8 text-textSecondary">
-              Sit facilis neque ab nulla vel. Cum eos in laudantium. Temporibus
-              eos totam in dolorum. Nemo vel facere repellendus ut eos dolores
-              similique.
+             These are some of our superstars who works hard and make your project successful without any hassle.
             </p>
           </div>
           <ul

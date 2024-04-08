@@ -12,37 +12,37 @@ const projects: OurWorkProps[] = [
   {
     title: "Vraj & Co. - Shopify Website + Store Setups",
     description: "We have successfully onboarded new zealand's authentic spices retailer to the shopify and helped them make their website , shopify store set ups, shopify product inventory management to their full shopify store consulation and set ups. All of these without compromising website performance with their custom design and fonts. Click on the link below to see live preview of how they look.",
-    description2: "e have helped them set up their store on social media platforms for better visibility to the customers and have made sure their website is compatible with every device. This helped them to get the most out of their Shopify store.",
-    image: "https://dummyimage.com/500x500",
+    description2: "All of these without compromising website performance with their custom design and fonts. Click on the link below to see live preview of how they look.",
+    image: "/images/projects/vraj_banner.png",
     url: "https://vraj-co.myshopify.com/"
   },
   {
-    title: "DYNA - Shopify Migration + Shopify Support",
-    description: "DYNA had very old website and they were looking to refresh their look and feel with ecommerce. Just like cherry on top. We recommended Shopify. Their construction company is now offering ecommerce on their site. We developed custom shopify theme with in built features like store locator, custom calculator logics to help them stand out in the market.",
-    description2: "e have helped them set up their store on social media platforms for better visibility to the customers and have made sure their website is compatible with every device. This helped them to get the most out of their Shopify store.",
-    image: "https://dummyimage.com/500x500",
-    url: "https://vraj-co.myshopify.com/"
+    title: "Gemme Moi - Shopify Website Development",
+    description: "Gemme moi is a ottawa based startup that sells stickers. We have helped them designing their website by recommending what works best for getting more conversions.",
+    description2: "We have also developed their site using the custom modules to give performance boost and custom wavy patterns to support their astrological stickers. We helped them by enabling the pickup and free local delivery to local customers increasing their flexibility to reach more local customers.",
+    image: "/images/projects/gemmemoi_banner.jpg",
+    url: "https://gemmemoi.ca/"
   },
   {
-    title: "Village Juicery - Website Design + Development",
-    description: "Village Juicery sells plant based nutrition products, Located in toronto, we worked for village juicery to design their website and customize their shopify theme with some advanced features like shop all products under one page with add to cart and delivery zone detector. We further helped them lower their page speed loads and increase the site performance.",
-    description2: "e have helped them set up their store on social media platforms for better visibility to the customers and have made sure their website is compatible with every device. This helped them to get the most out of their Shopify store.",
-    image: "https://dummyimage.com/500x500",
-    url: "https://vraj-co.myshopify.com/"
+    title: "Village Juicery - Website ReDesign + Development",
+    description: "Village Juicery sells plant based nutrition products, Located in toronto, we worked for village juicery to redesign their website and customize their shopify theme with some advanced features like shop all products under one page with add to cart and delivery zone detector. We further helped them lower their page speed loads and increase the site performance.",
+    description2: "The performance boost helped them get much better search engine rankings and speed scores and finally getting more sales.",
+    image: "/images/projects/vj_banner.png",
+    url: "https://www.villagejuicery.com/"
   },
   {
     title: "GTA Vapes - Shopify Tasks",
     description: "GTA Vapes is a famous chain of smoking products including cannabis and they were looking to implement custom adult verification popup on their website and also changing the look of their menus. Our team has helped them to integrate this with their current theme and made sure their requirements are satisfied with the follw ups.",
-    description2: "e have helped them set up their store on social media platforms for better visibility to the customers and have made sure their website is compatible with every device. This helped them to get the most out of their Shopify store.",
-    image: "https://dummyimage.com/500x500",
-    url: "https://vraj-co.myshopify.com/"
+    description2: "The designed solutions are a bug free and clean solution that does not deteriote the user performance while also doing the necessary age checks.",
+    image: "/images/projects/gtavapes_banner.png",
+    url: "https://gtavapes.com/"
   },
   {
     title: "SupportiveLiving.ca - Static Website",
     description: "Supportive Living is a website that provides support to ontario community by helping them maintaining their permanent housing. They were looking to build the website and reached out with the design. We have implemented their design in a static website and made sure their design is fully responsive and works across all major devices.",
-    description2: "e have helped them set up their store on social media platforms for better visibility to the customers and have made sure their website is compatible with every device. This helped them to get the most out of their Shopify store.",
-    image: "https://dummyimage.com/500x500",
-    url: "https://vraj-co.myshopify.com/"
+    description2: "They were our first client when we were learning to build the websites in university. This website was built within a week since we already had approved design by them.",
+    image: "/images/projects/supportive_banner.png",
+    url: "https://www.supportiveliving.ca/"
   }
 ]
 export default function OurWork() {
