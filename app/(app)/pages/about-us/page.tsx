@@ -254,39 +254,39 @@ export default async function Home() {
             </h2>
             <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
               <img
-                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg"
-                alt="Transistor"
-                width="158"
-                height="48"
+                className="col-span-2 max-h-8 w-full object-contain lg:col-span-1"
+                src="/brands/algolia_svg.svg"
+                alt="Algolia Logo"
+                width="120"
+                height="27"
               />
               <img
-                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg"
-                alt="Reform"
-                width="158"
-                height="48"
+                className="col-span-2 max-h-8 w-full object-contain lg:col-span-1"
+                src="/brands/gorgias_svg.svg"
+                alt="Gorgias Logo"
+                width="119"
+                height="27"
               />
               <img
-                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg"
-                alt="Tuple"
-                width="158"
-                height="48"
+                className="col-span-2 max-h-8 w-full object-contain lg:col-span-1"
+                src="/brands/shopify_plus_svg.svg"
+                alt="Shopify Plus Logo"
+                width="132"
+                height="27"
               />
               <img
-                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 sm:col-start-2"
-                src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg"
-                alt="SavvyCal"
-                width="158"
-                height="48"
+                className="col-span-2 max-h-8 w-full object-contain lg:col-span-1 sm:col-start-2"
+                src="/brands/klaviyo_svg.svg"
+                alt="klaviyo Logo"
+                width="120"
+                height="36"
               />
               <img
-                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 col-start-2 sm:col-start-auto"
-                src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg"
-                alt="Statamic"
-                width="158"
-                height="48"
+                className="col-span-2 max-h-8 w-full object-contain lg:col-span-1 col-start-2 sm:col-start-auto"
+                src="/brands/recharge_svg.svg"
+                alt="recharge logo"
+                width="159"
+                height="39"
               />
             </div>
           </div>
@@ -297,34 +297,33 @@ export default async function Home() {
         <div className="mx-auto mt-32 max-w-7xl xl:max-w-screen-2xl px-6 lg:px-8 sm:mt-40">
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className="text-3xl font-bold tracking-tight text-textPrimary sm:text-4xl">
-              We approach the workplace as something that adds to our lives and
-              adds value to world.
+              We approach the ecommerce as something that makes a difference and
+              adds value to your business.
             </h2>
             <p className="mt-6 text-lg leading-7 text-textSecondary">
-              Diam nunc lacus lacus aliquam turpis enim. Eget hac velit est
-              euismod lacus. Est non placerat nam arcu. Cras purus nibh cursus
-              sit eu in id. Integer vel nibh.
+              Our hard work on custom ecommerce projects have made us capable enough to handle any complex needs.
+              We work in collaboration with you and our partners to ensure that your online store is a success.
             </p>
           </div>
           <div className="mx-auto mt-16 flex max-w-2xl flex-col gap-8 lg:mx-0 lg:mt-20 lg:max-w-none lg:flex-row lg:items-end">
             <div className="flex flex-col-reverse justify-between gap-x-16 gap-y-8 rounded-2xl p-8 sm:w-3/4 sm:max-w-md sm:flex-row-reverse sm:items-end lg:max-w-none lg:w-72 lg:flex-none lg:flex-col lg:items-start bg-bgSecondary">
-              <p className="flex-none text-3xl font-bold tracking-tight text-textPrimary">250k</p>
+              <p className="flex-none text-3xl font-bold tracking-tight text-textPrimary">3.4%</p>
               <div className="sm:w-80 sm:shrink lg:w-auto lg:flex-none">
-                <p className="text-lg tracking-tight text-gray-600 font-semibold">Users on the platform</p>
+                <p className="text-lg tracking-tight text-gray-600 font-semibold">Avg. Conversion Rate</p>
                 <p className="mt-2 text-base text-textSecondary">
-                  Vel labore deleniti veniam consequuntur sunt nobis.
+                  Average Conversion rate of all of our clients in 2023
                 </p>
               </div>
             </div>
             <div className="flex flex-col-reverse justify-between gap-x-16 gap-y-8 rounded-2xl p-8 sm:flex-row-reverse sm:items-end lg:w-100 lg:flex-auto lg:flex-col lg:items-start lg:gap-y-44 bg-bgSecondaryInverse">
-              <p className="flex-none text-3xl font-bold tracking-tight text-bgPrimary">$8.9 billion</p>
+              <p className="flex-none text-3xl font-bold tracking-tight text-bgPrimary">$8.4 billion</p>
               <div className="sm:w-80 sm:shrink lg:w-auto lg:flex-none">
                 <p className="text-lg tracking-tight text-bgPrimary font-semibold">
                   We’re proud that our customers have made over $8 billion in
                   total revenue.
                 </p>
                 <p className="mt-2 text-base text-gray-400">
-                  Eu duis porta aliquam ornare. Elementum eget magna egestas.
+                  Total number of sales our clients have made last year out of which half of them are around black friday and sale events.
                 </p>
               </div>
             </div>
@@ -333,8 +332,7 @@ export default async function Home() {
               <div className="sm:w-80 sm:shrink lg:w-auto lg:flex-none">
                 <p className="text-lg tracking-tight font-semibold text-bgSecondary">Transactions this year</p>
                 <p className="mt-2 text-base text-brandTertiary">
-                  Eu duis porta aliquam ornare. Elementum eget magna egestas. Eu
-                  duis porta aliquam ornare.
+                  Huge number of transcations till now in 2024 to start with across all of our clients
                 </p>
               </div>
             </div>
@@ -354,160 +352,84 @@ export default async function Home() {
           </div>
           <ul
             role="list"
-            className="mx-auto mt-20 grid max-w-2XL grid-cols-2 gap-x-8 gap-y-16 text-center sm:grid-cols-3 lg:mx-0 lg:max-w-none md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6"
+            className="mx-auto mt-20 grid max-w-2xl grid-cols-2 gap-x-8 gap-y-16 text-center sm:grid-cols-3 lg:mx-0 lg:max-w-none "
           >
             <li>
               <img
-                className="mx-auto w-24 h-24 rounded-full"
-                src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=8&amp;w=1024&amp;h=1024&amp;q=80"
-                alt=""
+                className="mx-auto w-64 h-64 rounded-3xl"
+                src="/images/shreyank_profile.jpg"
+                alt="Shreyank Jadiya Image"
               />
               <h3 className="mt-6 text-base font-semibold leading-7 tracking-tight text-textPrimary">
-                Michael Foster
+                Shreyank Jadiya
               </h3>
               <p className="text-sm leading-6 text-textSecondary">
-                Co-Founder / CTO
+                Founder / Lead Developer
               </p>
             </li>
             <li>
               <img
-                className="mx-auto w-24 h-24 rounded-full"
+                className="mx-auto w-64 h-64 rounded-3xl"
                 src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=8&amp;w=1024&amp;h=1024&amp;q=80"
                 alt=""
               />
               <h3 className="mt-6 text-base font-semibold leading-7 tracking-tight text-textPrimary">
-                Dries Vincent
+                Shreya Jadiya
               </h3>
               <p className="text-sm leading-6 text-textSecondary">
-                Business Relations
+                Project Manager / Administrator
               </p>
             </li>
             <li>
               <img
-                className="mx-auto w-24 h-24 rounded-full"
-                src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=8&amp;w=1024&amp;h=1024&amp;q=80"
-                alt=""
+                className="mx-auto w-64 h-64 rounded-3xl"
+                src="/images/matthew_profile.jpg"
+                alt="matthew walton profile image"
               />
               <h3 className="mt-6 text-base font-semibold leading-7 tracking-tight text-textPrimary">
-                Lindsay Walton
+                Matthew Walton
               </h3>
               <p className="text-sm leading-6 text-textSecondary">
-                Front-end Developer
+                Full Stack Developer
               </p>
             </li>
             <li>
               <img
-                className="mx-auto w-24 h-24 rounded-full"
-                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=8&amp;w=1024&amp;h=1024&amp;q=80"
-                alt=""
+                className="mx-auto w-64 h-64 rounded-3xl"
+                src="/images/stella_profile.jpg"
+                alt="stella profile image"
               />
               <h3 className="mt-6 text-base font-semibold leading-7 tracking-tight text-textPrimary">
-                Courtney Henry
+                Stella Cruz
               </h3>
-              <p className="text-sm leading-6 text-textSecondary">Designer</p>
+              <p className="text-sm leading-6 text-textSecondary">Lead Designer</p>
             </li>
             <li>
               <img
-                className="mx-auto w-24 h-24 rounded-full"
-                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=8&amp;w=1024&amp;h=1024&amp;q=80"
-                alt=""
+                className="mx-auto w-64 h-64 rounded-3xl"
+                src="/images/muhammad_profile.jpg"
+                alt="muhammad profile image"
               />
               <h3 className="mt-6 text-base font-semibold leading-7 tracking-tight text-textPrimary">
-                Tom Cook
+                Muhammad Bilal
               </h3>
               <p className="text-sm leading-6 text-textSecondary">
-                Director of Product
+                Full Stack Developer
               </p>
             </li>
             <li>
               <img
-                className="mx-auto w-24 h-24 rounded-full"
-                src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=8&amp;w=1024&amp;h=1024&amp;q=80"
+                className="mx-auto w-64 h-64 rounded-3xl"
+                src="/images/nicolas_profile.jpg"
                 alt=""
               />
               <h3 className="mt-6 text-base font-semibold leading-7 tracking-tight text-textPrimary">
-                Whitney Francis
+                Nicolas Wang
               </h3>
-              <p className="text-sm leading-6 text-textSecondary">Copywriter</p>
+              <p className="text-sm leading-6 text-textSecondary">Junior Desginer</p>
             </li>
-            <li>
-              <img
-                className="mx-auto w-24 h-24 rounded-full"
-                src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=8&amp;w=1024&amp;h=1024&amp;q=80"
-                alt=""
-              />
-              <h3 className="mt-6 text-base font-semibold leading-7 tracking-tight text-textPrimary">
-                Leonard Krasner
-              </h3>
-              <p className="text-sm leading-6 text-textSecondary">
-                Senior Designer
-              </p>
-            </li>
-            <li>
-              <img
-                className="mx-auto w-24 h-24 rounded-full"
-                src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=8&amp;w=1024&amp;h=1024&amp;q=80"
-                alt=""
-              />
-              <h3 className="mt-6 text-base font-semibold leading-7 tracking-tight text-textPrimary">
-                Floyd Miles
-              </h3>
-              <p className="text-sm leading-6 text-textSecondary">
-                Principal Designer
-              </p>
-            </li>
-            <li>
-              <img
-                className="mx-auto w-24 h-24 rounded-full"
-                src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=8&amp;w=1024&amp;h=1024&amp;q=80"
-                alt=""
-              />
-              <h3 className="mt-6 text-base font-semibold leading-7 tracking-tight text-textPrimary">
-                Emily Selman
-              </h3>
-              <p className="text-sm leading-6 text-textSecondary">
-                VP, User Experience
-              </p>
-            </li>
-            <li>
-              <img
-                className="mx-auto w-24 h-24 rounded-full"
-                src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=8&amp;w=1024&amp;h=1024&amp;q=80"
-                alt=""
-              />
-              <h3 className="mt-6 text-base font-semibold leading-7 tracking-tight text-textPrimary">
-                Kristin Watson
-              </h3>
-              <p className="text-sm leading-6 text-textSecondary">
-                VP, Human Resources
-              </p>
-            </li>
-            <li>
-              <img
-                className="mx-auto w-24 h-24 rounded-full"
-                src="https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=8&amp;w=1024&amp;h=1024&amp;q=80"
-                alt=""
-              />
-              <h3 className="mt-6 text-base font-semibold leading-7 tracking-tight text-textPrimary">
-                Emma Dorsey
-              </h3>
-              <p className="text-sm leading-6 text-textSecondary">
-                Senior Developer
-              </p>
-            </li>
-            <li>
-              <img
-                className="mx-auto w-24 h-24 rounded-full"
-                src="https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=8&amp;w=1024&amp;h=1024&amp;q=80"
-                alt=""
-              />
-              <h3 className="mt-6 text-base font-semibold leading-7 tracking-tight text-textPrimary">
-                Alicia Bell
-              </h3>
-              <p className="text-sm leading-6 text-textSecondary">
-                Junior Copywriter
-              </p>
-            </li>
+            
+            
           </ul>
         </div>
       </Slide>
