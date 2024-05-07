@@ -280,6 +280,7 @@ export default function NewHeader() {
                             as={Link}
                             href={item.href}
                             className="block rounded-lg py-2 pl-6 pr-3 text-sm leading-7 text-textprimary hover:bg-gray-50"
+                            onClick={() => setMobileMenuOpen(false)}
                           >
                             {item.name}
                           </Disclosure.Button>

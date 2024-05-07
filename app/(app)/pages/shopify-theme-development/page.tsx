@@ -111,7 +111,55 @@ export default async function Home() {
       </div>
     </div>
       </Slide>
+
       <Slide delay={0.14}>
+      <div className="max-w-7xl xl:max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+            <section className="mt-12 flex flex-col items-center justify-center">
+                <h1 className="text-2xl font-bold text-center md:text-3xl lg:text-4xl">Choosing The Right Shopify Theme</h1>
+                <p className="mt-4 text-textSecondary text-center max-w-5xl text-lg leading-relaxed">
+                Whether you choose a pre-made or custom theme depends on your budget, time constraints, and how distinct you want your store to be. Pre-made themes offer a quick, cost-effective start, while custom themes provide uniqueness and flexibility, essential for standing out in a competitive e-commerce landscape.
+                We help you in both scenarios after determining what works best for you.
+                </p>
+            </section>
+
+            <section className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="bg-bgInformative shadow-lg rounded-lg p-6">
+                    <h2 className="text-lg font-semibold">Pre-made Shopify Themes</h2>
+                    <p className="text-gray-600 mt-2">
+                        Start quickly with a pre-made theme that can be customized to fit your needs. Ideal for those on a tight budget.
+                    </p>
+                    <ul className="mt-4 list-none">
+                        <li><span className="text-textPositive mr-2">✓</span>Fast to launch</li>
+                        <li><span className="text-textPositive mr-2">✓</span>Affordable</li>
+                        <li><span className="text-textPositive mr-2">✓</span>Mobile responsive designs</li>
+                        <li><span className="text-textNegative mr-2">✗</span>Unique Features</li>
+                        <li><span className="text-textNegative mr-2">✗</span>Code and Design Pattern Customization</li>
+                        <li><span className="text-textNegative mr-2">✗</span>Custom Advanced Integrations</li>
+                        <li><span className="text-textNegative mr-2">✗</span>Analytics/Pixels Integrations</li>
+                    </ul>
+                </div>
+
+                <div className="bg-brandPrimary text-white shadow-lg rounded-lg p-6">
+                    <h2 className="text-lg font-semibold">Custom Shopify Themes</h2>
+                    <p className="text-gray-200 mt-2">
+                        Get a unique design tailored specifically for your brand, enhancing your online presence and functionality.
+                    </p>
+                    <ul className="mt-4 list-none">
+                        <li><span className="text-textPositive mr-2 text-white">✓</span>Unique design and branding</li>
+                        <li><span className="text-textPositive mr-2 text-white">✓</span>Full control over functionality</li>
+                        <li><span className="text-textPositive mr-2 text-white">✓</span>Optimized performance and SEO</li>
+                        <li><span className="text-textPositive mr-2 text-white">✓</span>Advanced integrations</li>
+                        <li><span className="text-textPositive mr-2 text-white">✓</span>Advanced code patterns</li>
+                        <li><span className="text-textPositive mr-2 text-white">✓</span>Unique Design and Support</li>
+                        <li><span className="text-textPositive mr-2 text-white">✓</span>Analytics/pixel integrations</li>
+                        <li><span className="text-textPositive mr-2 text-white">✓</span>Major supported devices</li>
+                        <li><span className="text-textNegative mr-2 text-white">✗</span>Cost Effective</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+      </Slide>
+      <Slide delay={0.21}>
        <GetInTouch />
       </Slide>
     </main>
