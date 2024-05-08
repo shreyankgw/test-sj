@@ -2,6 +2,22 @@ import ContactForm from "../../ui/components/common/ContactForm";
 import { Slide } from "../../ui/animation/Slide";
 import  QuoteSingle  from "../../ui/components/common/Quote";
 import PageHeading from "../../ui/components/common/PageHeading";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+   title: "Contact Us | The SJ Development",
+   metadataBase: new URL("https://thesjdevelopment.com/pages/contact"),
+   description:
+     "",
+   openGraph: {
+     title: "Contact Us | The SJ Development",
+     url: "https://thesjdevelopment.com/pages/contact",
+     description:
+       "",
+     images:
+       "",
+   },
+ };
 
 export default async function Home() {
     

@@ -3,6 +3,22 @@ import { HeroProjects } from "../../ui/components/HeroParallax";
 import PageHeading from "../../ui/components/common/PageHeading";
 import OurWork from "../../ui/components/OurWork";
 import GetInTouch from "../../ui/components/common/GetInTouch";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Our Portfolio | The SJ Development",
+  metadataBase: new URL("https://thesjdevelopment.com/pages/our-work"),
+  description:
+    "",
+  openGraph: {
+    title: "Our Portfolio | The SJ Development",
+    url: "https://thesjdevelopment.com/pages/our-work",
+    description:
+      "",
+    images:
+      "",
+  },
+};
 
 export default async function Home() {
   return (

@@ -37,8 +37,8 @@ const products = [
     icon: '/images/icons/shopify_custom.svg'
   },
   {
-    name: "Performance Optimization / Accessibility",
-    description: "Rank Higher with Performance, SEO and Accessibility",
+    name: "Performance Optimization",
+    description: "Rank Higher with Performance and SEO",
     href: "/pages/performance-optimization",
     icon: '/images/icons/shopify_performance.svg'
   },

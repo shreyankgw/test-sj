@@ -1,6 +1,22 @@
 import { Slide } from "@/app/(app)/ui/animation/Slide";
 import Image from "next/image";
 import GetInTouch from "../../ui/components/common/GetInTouch";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Our Process | The SJ Development",
+  metadataBase: new URL("https://thesjdevelopment.com/pages/our-process"),
+  description:
+    "",
+  openGraph: {
+    title: "Our Process | The SJ Development",
+    url: "https://thesjdevelopment.com/pages/our-process",
+    description:
+      "",
+    images:
+      "",
+  },
+};
 export default async function Home() {
   return (
     <main className="flex flex-col min-h-screen overflow-hidden flex-auto w-full">

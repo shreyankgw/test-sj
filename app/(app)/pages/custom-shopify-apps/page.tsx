@@ -2,6 +2,22 @@ import { Slide } from "../../ui/animation/Slide";
 import Link from "next/link";
 import PageHeading from "../../ui/components/common/PageHeading";
 import GetInTouch from "../../ui/components/common/GetInTouch";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Shopify Custom App Development | The SJ Development",
+  metadataBase: new URL("https://thesjdevelopment.com/pages/custom-shopify-apps"),
+  description:
+    "",
+  openGraph: {
+    title: "Shopify Custom App Development | The SJ Development",
+    url: "https://thesjdevelopment.com/pages/custom-shopify-apps",
+    description:
+      "",
+    images:
+      "",
+  },
+};
 
 const iconRender = (val: string) => {
   switch (val) {

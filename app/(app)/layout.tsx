@@ -14,7 +14,7 @@ const options = {
     "",
   url: "https://www.thesjdevelopment.com",
   ogImage:
-    "https://res.cloudinary.com/victoreke/image/upload/v1692635746/victoreke/og.png",
+    "",
 };
 
 export const metadata: Metadata = {

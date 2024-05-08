@@ -1,5 +1,21 @@
 import { Slide } from "../../ui/animation/Slide";
 import FeaturedBlogs from "../../ui/components/FeaturedBlogs";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About us | The SJ Development",
+  metadataBase: new URL("https://thesjdevelopment.com/pages/about-us"),
+  description:
+    "",
+  openGraph: {
+    title: "About us | The SJ Development",
+    url: "https://thesjdevelopment.com/pages/about-us",
+    description:
+      "",
+    images:
+      "",
+  },
+};
 
 export default async function Home() {
   return (

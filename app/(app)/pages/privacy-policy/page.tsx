@@ -1,4 +1,20 @@
 import { Slide } from "../../ui/animation/Slide";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy | The SJ Development",
+  metadataBase: new URL("https://thesjdevelopment.com/pages/privacy-policy"),
+  description:
+    "",
+  openGraph: {
+    title: "Shopify Custom App Development | The SJ Development",
+    url: "https://thesjdevelopment.com/pages/privacy-policy",
+    description:
+      "",
+    images:
+      "",
+  },
+};
 export default async function Home() {
   return (
     <main className="flex flex-col min-h-screen">

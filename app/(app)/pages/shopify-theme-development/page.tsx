@@ -2,6 +2,22 @@ import Image from "next/image";
 import Link from "next/link";
 import { Slide } from "../../ui/animation/Slide";
 import  GetInTouch  from "../../ui/components/common/GetInTouch";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Shopify Theme Development | The SJ Development",
+  metadataBase: new URL("https://thesjdevelopment.com/pages/shopify-theme-development"),
+  description:
+    "",
+  openGraph: {
+    title: "Shopify Theme Development | The SJ Development",
+    url: "https://thesjdevelopment.com/pages/shopify-theme-development",
+    description:
+      "",
+    images:
+      "",
+  },
+};
 
 const features = [
   {
