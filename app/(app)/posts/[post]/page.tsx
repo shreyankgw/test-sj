@@ -13,6 +13,8 @@ import { CustomPortableText } from "../../ui/components/common/CustomPortableTex
 import { useEffect, useState } from "react";
 import { fetchPostData } from "../../utils/dataFetcher";
 import  SharePost  from "../../ui/components/common/SharePost";
+import ProgressBar from "../../ui/components/common/ProgressBar";
+import PostSkeleton from "../../ui/components/common/PostSkeleton";
 
 type Props = {
   params: {
@@ -30,13 +32,12 @@ export default function Article({ params }: Props) {
       const fetchAndSetPost = async () => {
         const postData = await fetchPostData(params.post);
         setPost(postData);
-        console.log(postData.categories);
       }
       fetchAndSetPost().catch(console.error);
    }, [params.post]);
 
    if(!post){
-     return <div>Loading...</div>
+     return <PostSkeleton />
    }
 
   const words = toPlainText(post.body!);
@@ -44,6 +45,7 @@ export default function Article({ params }: Props) {
 
   return (
     <main className="flex flex-col min-h-screen lg:max-w-7xl xl:max-w-screen-2xl mx-auto p-6 lg:px-8">
+      <ProgressBar />
       <header>
         <Slide className="relative flex items-center gap-x-2 border-b border-zinc-200 pb-8">
           <Link
@@ -115,14 +117,15 @@ export default function Article({ params }: Props) {
 
             <div className="relative w-full h-40 pt-[52.5%]">
                <Image 
-                   className="rounded-xl border border-zinc-800 object-cover"
-                   layout="fill"
+                   className="rounded-xl border border-gray-50 object-cover"
                    src={mainImage && mainImage || ''}
                    alt={post.title && post.title || ''}
                    quality={100}
                    priority
                    placeholder="blur"
                    blurDataURL={`/_next/image?url=${mainImage}&w=16&q=1`}
+                   fill
+                   sizes="100vw"
                 />
             </div>
 

@@ -12,9 +12,7 @@ export default async function Home() {
     
   return (
     <main className="flex flex-col min-h-screen">    
-      <Slide>
-         <Hero />
-      </Slide>
+      <Hero />
       <Slide delay={0.07}>
         <TrustedBy />
       </Slide>

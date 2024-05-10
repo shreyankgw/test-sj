@@ -3,12 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePosts } from "../../utils/usePosts";
 import { PortableText } from "@portabletext/react";
+import AllPostsSkeleton from "./common/AllPostsSkeleton";
 
 export default function AllPosts() {
   const { posts, loading } = usePosts();
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <AllPostsSkeleton />;
   }
 
   return (
