@@ -386,7 +386,7 @@ export default async function Home() {
             <li>
               <img
                 className="mx-auto w-64 h-64 rounded-3xl"
-                src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=8&amp;w=1024&amp;h=1024&amp;q=80"
+                src="/images/shreya_profile.jpg"
                 alt=""
               />
               <h3 className="mt-6 text-base font-semibold leading-7 tracking-tight text-textPrimary">
