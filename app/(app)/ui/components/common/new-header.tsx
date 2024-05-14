@@ -207,7 +207,7 @@ export default function NewHeader() {
           </Link>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <ButtonPrimary title="Get Started" url="/" />
+          <ButtonPrimary title="Get Started" url="/pages/contact" />
         </div>
       </nav>
 

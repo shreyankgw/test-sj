@@ -1,7 +1,38 @@
 "use client";
 import Link from "next/link";
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+
+const words = ["Passion.", "Innovation.", "Creativity.", "Excellence.", "Commitment."];
+const typingSpeed = 150;
+const erasingSpeed = 50;
+const delayBetweenWords = 2000;
 
 export default function Hero() {
+
+  const [wordIndex, setWordIndex] = useState(0);
+  const [displayWord, setDisplayWord] = useState('');
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const handleTyping = () => {
+      const currentWord = words[wordIndex];
+      const updatedText = isDeleting ? currentWord.slice(0, displayWord.length - 1) : currentWord.slice(0, displayWord.length + 1);
+      setDisplayWord(updatedText);
+
+      if (!isDeleting && updatedText === currentWord) {
+        // Pause before starting to delete
+        setTimeout(() => setIsDeleting(true), delayBetweenWords);
+      } else if (isDeleting && updatedText === '') {
+        setIsDeleting(false);
+        setWordIndex((prevIndex) => (prevIndex + 1) % words.length);
+      }
+    };
+
+    const timer = setTimeout(handleTyping, isDeleting ? erasingSpeed : typingSpeed);
+    return () => clearTimeout(timer);
+  }, [displayWord, isDeleting, wordIndex]);
+
   return (
     <section className="min-h-max">
       <div className="absolute top-1/3 left-1/2 -translate-y-1/2 -translate-x-1/2 w-2/5 aspect-[2/0.5] bg-gradient-to-br from-brandSecondary to-brandTertiary rounded-full opacity-25 blur-2xl"></div>
@@ -10,8 +41,9 @@ export default function Hero() {
         🔥 We Build Slick Shopify Stores
         </span>
         <div className="space-y-10">
-          <h1 className="text-textPrimary dark:text-white mx-auto max-w-5xl xl:max-w-7xl font-bold text-4xl/tight sm:text-5xl/tight lg:text-6xl/tight xl:text-7xl/tight">
-            Shopify Mastery Fueled By Passion.
+          <h1 className="text-textPrimary mx-auto max-w-5xl xl:max-w-7xl font-bold text-4xl/tight sm:text-5xl/tight lg:text-6xl/tight xl:text-7xl/tight">
+            Shopify Mastery Fueled By <br/>
+            <span className="relative inline-block text-brandPrimary">{displayWord}<motion.span className="absolute top-0 right-0 h-full w-[2px] bg-brandPrimary animate-pulse"></motion.span></span>
           </h1>
           <p className="text-textSecondary mx-auto max-w-2xl lg:max-w-3xl text-base md:text-lg lg:text-2xl">
             Experience Shopify Mastery: where passion and expertise converge for
