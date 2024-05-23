@@ -53,8 +53,6 @@ const config: Config = {
         bgPositive: "#E1FCDE",
         bgWarning: "#FFF2D2",
         bgNegative: "#FFD4D8",
-        bgLightScrim: "#FFFFFFCC",
-        bgDarkScrim: "#1A212B99",
         bgSecondaryInteractive: "#eceff4",
         bgSecondaryInteractiveHover: "#cbd4e1", 
         iconsPrimary: "#1A212B",

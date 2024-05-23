@@ -54,11 +54,6 @@ const footerBlocks = [
         link: "/pages/our-work",
       },
       {
-        id: 4,
-        text: "Pricing",
-        link: "/pages/pricing",
-      },
-      {
         id: 5,
         text: "Contact",
         link: "/pages/contact",

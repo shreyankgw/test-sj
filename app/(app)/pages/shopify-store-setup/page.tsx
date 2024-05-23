@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import { Slide } from "../../ui/animation/Slide";
 
 export const metadata: Metadata = {
   title: "Shopify Store Setup | The SJ Development",
@@ -318,6 +319,33 @@ export default async function Home() {
         </div>
         {/* End Grid */}
       </div>
+
+      <Slide>
+        <section className="bg-white py-[24px]">
+          <div className="mx-auto px-4 max-w-7xl xl:max-w-screen-2xl">
+            <div className="border-b border-stroke text-center">
+              <h2 className="mb-6 text-3xl lg:text-4xl font-semibold text-textPrimary">
+                Shopify Store Setup
+              </h2>
+              <p className="mb-6 text-md font-medium text-textSecondary max-w-3xl mx-auto">
+                Whether you already have a shopify store and looking for upgrading it or you are just starting over your shopify
+                journey, we can help you in any situation to reach your goals.
+              </p>
+            </div>
+
+            <div className="my-6">
+              <p className="text-textSecondary">
+                 We have helped number of clients in their shopify journey to help and grow their shopify storefronts. If you are dropshipping or if you are a large scale business
+                 with lots of data and customization, we always got your back to help you grow in your shopify journey.We can also help migrate your shopify store from other platforms like wordpress, magento or bigcommerce. If you have more than one store and would like to migrate the store
+                 data easily to the another store, we also have the in house team who can handle this.
+              </p>
+              <p>
+                 Below are some of our superpowers that can help you reach your goals.
+              </p>
+            </div>
+          </div>
+        </section>
+      </Slide>
     </main>
   );
 }
