@@ -1,6 +1,7 @@
 import { Slide } from "../../ui/animation/Slide";
 import FeaturedBlogs from "../../ui/components/FeaturedBlogs";
 import { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About us | The SJ Development",
@@ -158,13 +159,19 @@ export default async function Home() {
       </Slide>
       <Slide delay={0.2}>
         <div className="mt-32 sm:mt-40 xl:mx-auto lg:max-w-7xl xl:max-w-screen-2xl xl:px-8">
-          <img
-            src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2832&amp;q=80"
-            alt=""
+          <Image
+            src="/images/about-us-office.jpg"
+            alt="office setup"
             className="aspect-[5/2] w-full object-cover rounded-3xl"
+            height={3612}
+            width={5418}
+            loading="lazy"
+            placeholder="blur"
+            blurDataURL="/images/about-us-office.jpg"
           />
         </div>
       </Slide>
+
       <Slide delay={0.3}>
         <div className="mx-auto mt-32 max-w-7xl xl:max-w-screen-2xl px-6 lg:px-8 sm:mt-40">
           <div className="mx-auto max-w-2xl lg:mx-0">
