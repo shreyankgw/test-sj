@@ -2,6 +2,9 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { Slide } from "../../ui/animation/Slide";
+import SupportSection from "../../ui/components/SupportSection";
+import FeaturedBlogs from "../../ui/components/FeaturedBlogs";
+import GetInTouch from "../../ui/components/common/GetInTouch";
 
 export const metadata: Metadata = {
   title: "Shopify Store Setup | The SJ Development",
@@ -16,6 +19,7 @@ export const metadata: Metadata = {
     images: "",
   },
 };
+
 export default async function Home() {
   return (
     <main className="flex flex-col min-h-screen">
@@ -328,24 +332,260 @@ export default async function Home() {
                 Shopify Store Setup
               </h2>
               <p className="mb-6 text-md font-medium text-textSecondary max-w-3xl mx-auto">
-                Whether you already have a shopify store and looking for upgrading it or you are just starting over your shopify
-                journey, we can help you in any situation to reach your goals.
+                Whether you already have a shopify store and looking for
+                upgrading it or you are just starting over your shopify journey,
+                we can help you in any situation to reach your goals.
               </p>
             </div>
 
             <div className="my-6">
               <p className="text-textSecondary">
-                 We have helped number of clients in their shopify journey to help and grow their shopify storefronts. If you are dropshipping or if you are a large scale business
-                 with lots of data and customization, we always got your back to help you grow in your shopify journey.We can also help migrate your shopify store from other platforms like wordpress, magento or bigcommerce. If you have more than one store and would like to migrate the store
-                 data easily to the another store, we also have the in house team who can handle this.
+                We have helped number of clients in their shopify journey to
+                help and grow their shopify storefronts. If you are dropshipping
+                or if you are a large scale business with lots of data and
+                customization, we always got your back to help you grow in your
+                shopify journey.We can also help migrate your shopify store from
+                other platforms like wordpress, magento or bigcommerce. If you
+                have more than one store and would like to migrate the store
+                data easily to the another store, we also have the in house team
+                who can handle this. Below are some of our superpowers that can
+                help you reach your goals.
               </p>
-              <p>
-                 Below are some of our superpowers that can help you reach your goals.
-              </p>
+            </div>
+
+            <div className="px-4 py-10 lg:py-14 mx-auto">
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 items-center gap-6 md:gap-10">
+                {/* Card */}
+                <div className="size-full bg-white shadow-lg rounded-lg p-5">
+                  <div className="flex items-center gap-x-4 mb-3">
+                    <div className="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-blue-50 bg-bgInformative/90">
+                      <svg
+                        className="flex-shrink-0 size-6 text-brandPrimary"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width={24}
+                        height={24}
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <circle cx="13.5" cy="6.5" r=".5" />
+                        <circle cx="17.5" cy="10.5" r=".5" />
+                        <circle cx="8.5" cy="7.5" r=".5" />
+                        <circle cx="6.5" cy="12.5" r=".5" />
+                        <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z" />
+                      </svg>
+                    </div>
+                    <div className="flex-shrink-0">
+                      <h3 className="block text-lg font-semibold text-gray-800">
+                        Build your Shopify Store
+                      </h3>
+                    </div>
+                  </div>
+                  <p className="text-gray-600">
+                    Starting from scratch to setup everything including
+                    products, collections and all the store settings that is
+                    needed to keep your store up and running.
+                  </p>
+                </div>
+                {/* End Card */}
+                {/* Card */}
+                <div className="size-full bg-white shadow-lg rounded-lg p-5">
+                  <div className="flex items-center gap-x-4 mb-3">
+                    <div className="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-blue-50 bg-blue-100">
+                      <svg
+                        className="flex-shrink-0 size-6 text-blue-600"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width={24}
+                        height={24}
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="M2 3h20" />
+                        <path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3" />
+                        <path d="m7 21 5-5 5 5" />
+                      </svg>
+                    </div>
+                    <div className="flex-shrink-0">
+                      <h3 className="block text-lg font-semibold text-gray-800">
+                        Shopify Store Migration
+                      </h3>
+                    </div>
+                  </div>
+                  <p className="text-gray-600">
+                    Want to get started on shopify ? worried about migrating
+                    your store data ? We help clients migrate data to another
+                    store easily from all major platforms.
+                  </p>
+                </div>
+                {/* End Card */}
+                {/* Card */}
+                <div className="size-full bg-white shadow-lg rounded-lg p-5">
+                  <div className="flex items-center gap-x-4 mb-3">
+                    <div className="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-blue-50 bg-blue-100">
+                      <svg
+                        className="flex-shrink-0 size-6 text-blue-600"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width={24}
+                        height={24}
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7" />
+                        <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
+                        <path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4" />
+                        <path d="M2 7h20" />
+                        <path d="M22 7v3a2 2 0 0 1-2 2v0a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12v0a2 2 0 0 1-2-2V7" />
+                      </svg>
+                    </div>
+                    <div className="flex-shrink-0">
+                      <h3 className="block text-lg font-semibold text-gray-800">
+                        Products Setup and Migration
+                      </h3>
+                    </div>
+                  </div>
+                  <p className="text-gray-600">
+                    We can also help you setup custom data for your products
+                    that were present in the other ecommerce platforms and help
+                    you can manage them easily right from the shopify admin. No
+                    techincal skills required.
+                  </p>
+                </div>
+                {/* End Card */}
+                {/* Card */}
+                <div className="size-full bg-white shadow-lg rounded-lg p-5">
+                  <div className="flex items-center gap-x-4 mb-3">
+                    <div className="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-blue-50 bg-blue-100">
+                      <svg
+                        className="flex-shrink-0 size-6 text-blue-600"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width={24}
+                        height={24}
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="M5.5 8.5 9 12l-3.5 3.5L2 12l3.5-3.5Z" />
+                        <path d="m12 2 3.5 3.5L12 9 8.5 5.5 12 2Z" />
+                        <path d="M18.5 8.5 22 12l-3.5 3.5L15 12l3.5-3.5Z" />
+                        <path d="m12 15 3.5 3.5L12 22l-3.5-3.5L12 15Z" />
+                      </svg>
+                    </div>
+                    <div className="flex-shrink-0">
+                      <h3 className="block text-lg font-semibold text-gray-800">
+                        Integrating with ERPs and more
+                      </h3>
+                    </div>
+                  </div>
+                  <p className="text-gray-600">
+                    Whether you want to develop a custom solution for your
+                    business operations or just wanted to integrate Shopify with
+                    your existing ERP, we have got you covered. We cover major
+                    ERP integrations in market.
+                  </p>
+                </div>
+                {/* End Card */}
+                {/* Card */}
+                <div className="size-full bg-white shadow-lg rounded-lg p-5">
+                  <div className="flex items-center gap-x-4 mb-3">
+                    <div className="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-blue-50 bg-blue-100">
+                      <svg
+                        className="flex-shrink-0 size-6 text-blue-600"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width={24}
+                        height={24}
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="M16.466 7.5C15.643 4.237 13.952 2 12 2 9.239 2 7 6.477 7 12s2.239 10 5 10c.342 0 .677-.069 1-.2" />
+                        <path d="m15.194 13.707 3.814 1.86-1.86 3.814" />
+                        <path d="M19 15.57c-1.804.885-4.274 1.43-7 1.43-5.523 0-10-2.239-10-5s4.477-5 10-5c4.838 0 8.873 1.718 9.8 4" />
+                      </svg>
+                    </div>
+                    <div className="flex-shrink-0">
+                      <h3 className="block text-lg font-semibold text-gray-800">
+                        Shipping, fulfillment and payments
+                      </h3>
+                    </div>
+                  </div>
+                  <p className="text-gray-600">
+                    Setting up custom shipping options or integrating the custom
+                    payment options at checkout is easier than ever with new
+                    shopify updates. We can help you setup custom shipping and
+                    payment options.
+                  </p>
+                </div>
+                {/* End Card */}
+                {/* Card */}
+                <div className="size-full bg-white shadow-lg rounded-lg p-5">
+                  <div className="flex items-center gap-x-4 mb-3">
+                    <div className="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-blue-50 bg-blue-100">
+                      <svg
+                        className="flex-shrink-0 size-6 text-blue-600"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width={24}
+                        height={24}
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="M8.3 10a.7.7 0 0 1-.626-1.079L11.4 3a.7.7 0 0 1 1.198-.043L16.3 8.9a.7.7 0 0 1-.572 1.1Z" />
+                        <rect x={3} y={14} width={7} height={7} rx={1} />
+                        <circle cx="17.5" cy="17.5" r="3.5" />
+                      </svg>
+                    </div>
+                    <div className="flex-shrink-0">
+                      <h3 className="block text-lg font-semibold text-gray-800">
+                        Store Analysis and Improvements
+                      </h3>
+                    </div>
+                  </div>
+                  <p className="text-gray-600">
+                    We also analyze your store and suggest you the best ways to
+                    improve it to take best benefit of what shopify has to
+                    offer. We can also then help in setting up that features.
+                  </p>
+                </div>
+                {/* End Card */}
+              </div>
             </div>
           </div>
         </section>
       </Slide>
+     
+       <Slide delay={0.14}>
+          <SupportSection />
+       </Slide>
+
+       <Slide delay={0.21}>
+         <FeaturedBlogs categoryName="Featured" />
+       </Slide>
+
+       <Slide delay={0.28}>
+         <GetInTouch />
+       </Slide>
+    
+      
     </main>
   );
 }
